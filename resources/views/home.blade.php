@@ -1,23 +1,29 @@
 @extends('layouts.app')
 
+@section('page_title') Dashboard @endsection
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-lg leading-6 font-semibold text-gray-900">
+                Dashboard
+            </h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="app-container sm:px-6 lg:px-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="px-4 py-5 sm:p-6">
+                    Hello?
+                    <div class="my-4">
+                        <button class="btn btn-primary">Im a Button</button>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+                        <button class="btn btn-secondary">Im a 2nd Button</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </main>
+
 @endsection

@@ -1,0 +1,7 @@
+.card-w-header {
+    @apply bg-gray-50 text-gray-800 overflow-hidden shadow rounded-lg;
+}
+
+.card {
+    @apply bg-white text-gray-800 overflow-hidden shadow rounded-lg;
+}

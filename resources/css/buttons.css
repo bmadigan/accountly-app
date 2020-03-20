@@ -1,0 +1,23 @@
+.btn {
+    @apply inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded transition ease-in-out;
+}
+
+.btn-primary {
+    @apply text-white bg-blue-500;
+}
+.btn-primary:hover {
+    @apply bg-blue-400;
+}
+.btn-primary:focus {
+    @apply border-blue-600 outline-none shadow-outline-blue;
+}
+
+.btn-secondary {
+    @apply text-white bg-gray-600;
+}
+.btn-secondary:hover {
+    @apply bg-gray-500;
+}
+.btn-secondary:focus {
+    @apply border-gray-700 outline-none shadow-outline-gray;
+}

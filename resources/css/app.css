@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Custom Styles Go Here */
+@import "./global.css";
+@import "./card.css";
+@import "./buttons.css";
+
+@import "tailwindcss/utilities";
