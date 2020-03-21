@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('page_title') Dashboard @endsection
+@section('page_title') Create Team @endsection
 
 @section('content')
     <header class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
             <h2 class="text-lg leading-6 font-semibold text-gray-900">
-                Dashboard
+                Missing Team
             </h2>
         </div>
     </header>
@@ -16,11 +16,7 @@
             <div class="card">
                 <div class="px-4 py-5 sm:p-6">
 
-                    @livewire('hello-world')
-
-                    <div>
-                        TeamTest: {{ auth()->user()->currentTeam() }}
-                    </div>
+                    You will need to create your first team.
 
                     <div class="my-4">
                         <button class="btn btn-primary">Im a Button</button>
