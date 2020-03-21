@@ -6,11 +6,6 @@ use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         // Create some random teams with users
@@ -29,5 +24,12 @@ class UsersTableSeeder extends Seeder
             'current_team_id' => $myTeam->id,
         ]);
         $myTeam->users()->attach($me);
+
+        // I also need a Staff member account
+        $me = factory(User::class)->create([
+            'name' => 'Brad Wessa',
+            'email' => 'brad@wessa.com',
+            'staff' => true,
+        ]);
     }
 }
