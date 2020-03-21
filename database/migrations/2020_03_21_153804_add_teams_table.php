@@ -15,6 +15,7 @@ class AddTeamsTable extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->uuid('uuid')->index();
             $table->unsignedBigInteger('owner_id')->index();
             $table->string('name');
             $table->string('slug')->nullable()->unique();

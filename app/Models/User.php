@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Support\Str;
 use App\Traits\CanJoinTeams;
 use Illuminate\Notifications\Notifiable;
+use Dyrynda\Database\Support\GeneratesUuid;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable, CanJoinTeams;
+    use Notifiable, CanJoinTeams, GeneratesUuid;
 
     protected $fillable = [
         'name', 'email', 'password',

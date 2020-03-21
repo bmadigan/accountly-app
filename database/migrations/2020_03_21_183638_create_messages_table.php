@@ -15,6 +15,7 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->uuid('uuid')->index();
             $table->unsignedBigInteger('created_by');
             $table->unsignedBigInteger('team_id');
             $table->string('title');

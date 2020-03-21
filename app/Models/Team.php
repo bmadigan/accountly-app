@@ -2,8 +2,12 @@
 
 namespace App\Models;
 
+use Dyrynda\Database\Support\GeneratesUuid;
+
 class Team extends Model
 {
+    use GeneratesUuid;
+
     protected $casts = [
         'owner_id' => 'int',
         //'trial_ends_at' => 'datetime',
