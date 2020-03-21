@@ -30,6 +30,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    @livewireStyles
 </head>
 <body class="bg-gray-100">
     <div class="min-h-screen flex flex-col">
@@ -41,5 +42,6 @@
 
         @include('shared.footer')
     </div>
+    @livewireScripts
 </body>
 </html>

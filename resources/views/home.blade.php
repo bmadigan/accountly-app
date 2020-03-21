@@ -15,7 +15,9 @@
         <div class="app-container sm:px-6 lg:px-8">
             <div class="card">
                 <div class="px-4 py-5 sm:p-6">
-                    Hello?
+
+                    @livewire('hello-world')
+
                     <div class="my-4">
                         <button class="btn btn-primary">Im a Button</button>
 
