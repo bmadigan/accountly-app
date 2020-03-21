@@ -19,7 +19,7 @@
                     @livewire('hello-world')
 
                     <div>
-                        TeamTest: {{ auth()->user()->currentTeam() }}
+                        TeamTest: {{ auth()->user()->currentTeam()->name }}
                     </div>
 
                     <div class="my-4">
