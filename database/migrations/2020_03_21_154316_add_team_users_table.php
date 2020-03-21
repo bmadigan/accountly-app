@@ -16,7 +16,7 @@ class AddTeamUsersTable extends Migration
         Schema::create('team_users', function (Blueprint $table) {
             $table->unsignedBigInteger('team_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('role', 20);
+            //$table->string('role', 20);
 
             $table->unique(['team_id', 'user_id']);
         });
