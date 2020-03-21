@@ -9,6 +9,7 @@ $factory->define(Message::class, function (Faker $faker) {
     return [
         'created_by' => 1,
         'team_id' => 1,
-        'body' => $faker->sentence()
+        'title' => $faker->sentence(),
+        'body' => $faker->paragraph(),
     ];
 });

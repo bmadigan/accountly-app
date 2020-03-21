@@ -17,7 +17,9 @@ class CreateMessagesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('created_by');
             $table->unsignedBigInteger('team_id');
+            $table->string('title');
             $table->text('body');
+            $table->boolean('is_archived')->default(false);
             $table->timestamps();
         });
     }
