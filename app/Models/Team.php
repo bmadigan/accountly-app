@@ -21,7 +21,12 @@ class Team extends Model
             'team_users',
             'team_id',
             'user_id'
-        );//->withPivot('role');
+        ); //->withPivot('role');
+    }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class)->orderBy('created_at', 'DESC');
     }
 
     /**
@@ -31,7 +36,7 @@ class Team extends Model
      */
     public function totalPotentialUsers()
     {
-        return $this->users()->count();// + $this->invitations()->count();
+        return $this->users()->count(); // + $this->invitations()->count();
     }
 
     public function getEmailAttribute()

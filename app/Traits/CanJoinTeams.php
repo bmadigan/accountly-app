@@ -40,7 +40,7 @@ trait CanJoinTeams
 
     public function ownedTeams()
     {
-        return $this->hasMany(Spark::teamModel(), 'owner_id');
+        return $this->hasMany(Team::class, 'owner_id');
     }
 
     // public function roleOn($team)
