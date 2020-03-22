@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('/', function () {
+    return redirect('/home');
+});
+
 Route::group(['middleware' => ['has.team', 'auth']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
 
