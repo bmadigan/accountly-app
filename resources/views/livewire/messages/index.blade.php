@@ -4,6 +4,7 @@
             <select class="form-select block w-full">
                 <option>Unread Messages</option>
                 <option>Read Messages</option>
+                <option>Archived Messages</option>
             </select>
         </div>
         <div class="hidden sm:block">
@@ -13,6 +14,10 @@
                 </button>
                 <button @click="currentTab = 'read'" :class="{ 'tab-active': currentTab === 'read' }" class="tab">
                     Read Messages
+                </button>
+                <button @click="currentTab = 'archived'" :class="{ 'tab-active': currentTab === 'archived' }"
+                    class="tab">
+                    Archived Messages
                 </button>
             </nav>
         </div>
@@ -89,4 +94,7 @@
         <h4>Im the read messages</h4>
     </div>
 
+    <div class="card" x-show="currentTab === 'archived'">
+        <h4>Im the archvied messages</h4>
+    </div>
 </div>
