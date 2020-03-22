@@ -4,14 +4,14 @@
 
 @section('content')
 
-    <x-page-header page="Dashboard" />
+<x-page-header page="Dashboard" />
 
-    <main>
-        <div class="app-container sm:px-6 lg:px-8">
-            <div class="card">
-                <div class="px-4 py-5 sm:p-6">
+<main>
+    <div class="app-container sm:px-6 lg:px-8">
+        <div class="card">
+            <div class="px-4 py-5 sm:p-6">
 
-                    <livewire:hello-world>
+                <livewire:hello-world>
 
                     <div>
                         TeamTest: {{ auth()->user()->currentTeam()->name }}
@@ -22,9 +22,9 @@
 
                         <button class="btn btn-secondary">Im a 2nd Button</button>
                     </div>
-                </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
 @endsection

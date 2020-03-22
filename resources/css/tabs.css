@@ -1,0 +1,17 @@
+.tab {
+    @apply px-3 py-2 font-medium text-sm leading-5 rounded-t-md text-gray-600;
+}
+.tab:not(:first-child) {
+    @apply ml-4 ;
+}
+
+.tab:hover {
+    @apply bg-gray-300 text-gray-800;
+}
+.tab:focus {
+    @apply outline-none bg-gray-300;
+}
+
+.tab-active {
+    @apply bg-gray-200 text-gray-800;
+}

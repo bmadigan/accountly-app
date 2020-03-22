@@ -66,6 +66,37 @@
   outline: 0;
   box-shadow: 0 0 0 3px rgba(159, 166, 178, 0.45);
 }
+.tab {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  color: #4b5563;
+}
+
+.tab:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.tab:hover {
+  background-color: #d2d6dc;
+  color: #252f3f;
+}
+
+.tab:focus {
+  outline: 0;
+  background-color: #d2d6dc;
+}
+
+.tab-active {
+  background-color: #e5e7eb;
+  color: #252f3f;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
