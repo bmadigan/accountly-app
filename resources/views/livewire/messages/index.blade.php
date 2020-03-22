@@ -7,19 +7,27 @@
                 <option>Archived Messages</option>
             </select>
         </div>
-        <div class="hidden sm:block">
-            <nav class="flex ml-2">
-                <button @click="currentTab = 'unread'" :class="{ 'tab-active': currentTab === 'unread' }" class="tab">
-                    Unread Messages
-                </button>
-                <button @click="currentTab = 'read'" :class="{ 'tab-active': currentTab === 'read' }" class="tab">
-                    Read Messages
-                </button>
-                <button @click="currentTab = 'archived'" :class="{ 'tab-active': currentTab === 'archived' }"
-                    class="tab">
-                    Archived Messages
-                </button>
-            </nav>
+        <div class="flex">
+
+            <div class="flex-1 hidden sm:block content-end">
+                <nav class="flex ml-2">
+                    <button @click="currentTab = 'unread'" :class="{ 'tab-active': currentTab === 'unread' }"
+                        class="tab">
+                        Unread Messages
+                    </button>
+                    <button @click="currentTab = 'read'" :class="{ 'tab-active': currentTab === 'read' }" class="tab">
+                        Read Messages
+                    </button>
+                    <button @click="currentTab = 'archived'" :class="{ 'tab-active': currentTab === 'archived' }"
+                        class="tab">
+                        Archived Messages
+                    </button>
+                </nav>
+            </div>
+
+            <div>
+                <a href="#" class="btn btn-secondary -mt-2 mr-1">New Message</a>
+            </div>
         </div>
     </div>
 

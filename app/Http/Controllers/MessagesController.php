@@ -10,4 +10,9 @@ class MessagesController extends Controller
     {
         return view('messages.index');
     }
+
+    public function index()
+    {
+        return view('messages.create');
+    }
 }
