@@ -9,11 +9,13 @@
                 <div class="hidden lg:block lg:ml-6">
                     <div class="flex">
                         <a href="{{ route('home') }}"
-                            class="px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 bg-gray-100 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Dashboard</a>
+                            class="{{ (request()->is('home')) ? 'bg-gray-100' : '' }}
+                                px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Dashboard</a>
                         <a href="#"
                             class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Reports</a>
                         <a href="{{ route('messages.index') }}"
-                            class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Messages</a>
+                            class="{{ (request()->is('messages*')) ? 'bg-gray-100' : '' }}
+                            ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Messages</a>
                         <a href="#"
                             class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Documents</a>
                         <a href="#"
@@ -50,7 +52,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="hidden lg:block lg:ml-4">
+            <div class="hidden z-50 lg:block lg:ml-4">
                 <div class="flex items-center">
                     <button
                         class="flex-shrink-0 p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">
