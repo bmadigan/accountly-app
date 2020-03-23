@@ -13,6 +13,7 @@ Route::group(['middleware' => ['has.team', 'auth']], function () {
 
     Route::get('/messages', 'MessagesController@index')->name('messages.index');
     Route::get('/messages/create', 'MessagesController@create')->name('messages.create');
+    Route::get('/messages/{uuid}', 'MessagesController@show')->name('messages.show');
 });
 
 Route::group(['middleware' => ['auth']], function () {
