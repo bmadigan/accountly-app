@@ -9,7 +9,7 @@
     @apply bg-gray-300 text-gray-800;
 }
 .tab:focus {
-    @apply outline-none bg-gray-300;
+    @apply outline-none bg-gray-200;
 }
 
 .tab-active {

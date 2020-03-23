@@ -18,6 +18,7 @@ class Create extends Component
 
     public function submit()
     {
+        sleep(3);
         $this->validate([
             'title' => 'required|min:6',
             'body' => 'required',
@@ -29,6 +30,8 @@ class Create extends Component
             'title' => $this->title,
             'body' => $this->body,
         ]);
+
+        session()->flash('success', 'Message created');
 
         return redirect()->route('messages.index');
     }

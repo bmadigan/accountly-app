@@ -11,6 +11,9 @@
 .btn-primary:focus {
     @apply border-blue-600 outline-none shadow-outline-blue;
 }
+.btn-primary-disabled {
+    @apply text-white bg-blue-400 ;
+}
 
 .btn-secondary {
     @apply text-white bg-gray-600 border border-transparent;

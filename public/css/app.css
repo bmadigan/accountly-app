@@ -5,6 +5,65 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+
+.spinner {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+}
+
+.spinner .path {
+  stroke: #EBF8FF;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
 .card-w-header {
   background-color: #f9fafb;
   color: #252f3f;
@@ -50,6 +109,11 @@
   border-color: #1c64f2;
   outline: 0;
   box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+}
+
+.btn-primary-disabled {
+  color: #ffffff;
+  background-color: #76a9fa;
 }
 
 .btn-secondary {
@@ -106,7 +170,7 @@
 
 .tab:focus {
   outline: 0;
-  background-color: #d2d6dc;
+  background-color: #e5e7eb;
 }
 
 .tab-active {
