@@ -27,8 +27,6 @@
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-width: 1px;
-  border-color: transparent;
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: 500;
@@ -40,6 +38,8 @@
 .btn-primary {
   color: #ffffff;
   background-color: #3f83f8;
+  border-width: 1px;
+  border-color: transparent;
 }
 
 .btn-primary:hover {
@@ -55,6 +55,8 @@
 .btn-secondary {
   color: #ffffff;
   background-color: #4b5563;
+  border-width: 1px;
+  border-color: transparent;
 }
 
 .btn-secondary:hover {
@@ -65,6 +67,20 @@
   border-color: #374151;
   outline: 0;
   box-shadow: 0 0 0 3px rgba(159, 166, 178, 0.45);
+}
+
+.btn-outline {
+  border-width: 1px;
+  border-color: #d2d6dc;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.btn-outline:hover {
+  color: #6b7280;
 }
 .tab {
   padding-left: 0.75rem;
@@ -96,6 +112,30 @@
 .tab-active {
   background-color: #e5e7eb;
   color: #252f3f;
+}
+.f-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #374151;
+}
+
+.f-input {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.f-error {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #e02424;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

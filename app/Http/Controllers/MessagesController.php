@@ -11,7 +11,7 @@ class MessagesController extends Controller
         return view('messages.index');
     }
 
-    public function index()
+    public function create()
     {
         return view('messages.create');
     }

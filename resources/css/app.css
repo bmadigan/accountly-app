@@ -6,5 +6,6 @@
 @import "./card.css";
 @import "./buttons.css";
 @import "./tabs.css";
+@import "./forms.css";
 
 @import "tailwindcss/utilities";

@@ -1,0 +1,11 @@
+.f-label {
+    @apply block text-sm font-medium leading-5 text-gray-700;
+}
+
+.f-input {
+    @apply block w-full rounded-none rounded-r-md transition duration-150 ease-in-out;
+}
+
+.f-error {
+    @apply mt-2 text-sm text-red-600;
+}

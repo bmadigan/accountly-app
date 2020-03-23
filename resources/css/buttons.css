@@ -1,9 +1,9 @@
 .btn {
-    @apply inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded transition ease-in-out;
+    @apply inline-flex items-center px-3 py-2 text-sm leading-4 font-medium rounded transition ease-in-out;
 }
 
 .btn-primary {
-    @apply text-white bg-blue-500;
+    @apply text-white bg-blue-500 border border-transparent;
 }
 .btn-primary:hover {
     @apply bg-blue-400;
@@ -13,11 +13,17 @@
 }
 
 .btn-secondary {
-    @apply text-white bg-gray-600;
+    @apply text-white bg-gray-600 border border-transparent;
 }
 .btn-secondary:hover {
     @apply bg-gray-500;
 }
 .btn-secondary:focus {
     @apply border-gray-700 outline-none shadow-outline-gray;
+}
+.btn-outline {
+    @apply border border-gray-300 rounded-md text-sm leading-5 font-medium text-gray-700;
+}
+.btn-outline:hover {
+    @apply text-gray-500;
 }

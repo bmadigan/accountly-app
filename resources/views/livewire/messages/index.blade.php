@@ -26,7 +26,7 @@
             </div>
 
             <div>
-                <a href="#" class="btn btn-secondary -mt-2 mr-1">New Message</a>
+                <a href="{{ route('messages.create') }}" class="btn btn-secondary -mt-2 mr-1">New Message</a>
             </div>
         </div>
     </div>
