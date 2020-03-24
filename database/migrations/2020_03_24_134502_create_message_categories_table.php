@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMessagesTable extends Migration
+class CreateMessageCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('messages', function (Blueprint $table) {
+        Schema::create('message_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->uuid('uuid')->index();
-            $table->unsignedBigInteger('created_by')->index();
-            $table->unsignedBigInteger('team_id')->index();
-            $table->unsignedBigInteger('category_id')->index()->nullable();
-            $table->string('title');
-            $table->text('body');
-            $table->boolean('is_archived')->default(false);
+            $table->unsignedBigInteger('team_id');
+            $table->string('category_name');
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ class CreateMessagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('messages');
+        Schema::dropIfExists('message_categories');
     }
 }

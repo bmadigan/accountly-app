@@ -25,41 +25,52 @@
                                             {{ $message->owner->name }}
                                         </h3>
                                         <p class="text-sm leading-5 text-gray-500">
-                                            <time
-                                                datetime="{{ dateShortFormat($message->created_at) }}">{{ dateLongFormat($message->created_at) }}</time>
+                                            Account Manager
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="ml-4 mt-4 flex-shrink-0 flex">
-                                <span class="inline-flex rounded-md shadow-sm">
-                                    <button type="button"
-                                        class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-50 active:text-gray-800">
-                                        <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path
-                                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                        </svg>
-                                        <span>
-                                            Phone
-                                        </span>
-                                    </button>
-                                </span>
+                                <div x-data="{ open: false }" @keydown.escape="open = false" @click.away="open = false"
+                                    class="ml-12 relative">
+                                    <div>
+                                        <button @click="open = !open"
+                                            class="flex items-center text-gray-400 hover:text-gray-600">
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div x-show="open" style="display: none;"
+                                        x-transition:enter="transition ease-out duration-100"
+                                        x-transition:enter-start="transform opacity-0 scale-95"
+                                        x-transition:enter-end="transform opacity-100 scale-100"
+                                        x-transition:leave="transition ease-in duration-75"
+                                        x-transition:leave-start="transform opacity-100 scale-100"
+                                        x-transition:leave-end="transform opacity-0 scale-95"
+                                        class="origin-top-right absolute right-0 mt-2 w-56 min-w-max-content rounded-md shadow-lg">
+                                        <div class="rounded-md bg-white shadow-xs z-20">
+                                            <div class="border-t border-gray-100"></div>
+                                            <div class="py-1">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Edit
+                                                    Message</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Copy
+                                                    Message</a>
+                                            </div>
+                                            <div class="border-t border-gray-100"></div>
+                                            <div class="py-1">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-red-700 hover:bg-gray-100">Archive
+                                                    Message</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <span class="ml-3 inline-flex rounded-md shadow-sm">
-                                    <button type="button"
-                                        class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-50 active:text-gray-800">
-                                        <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" fill="currentColor"
-                                            viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd"
-                                                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                        <span>
-                                            Email
-                                        </span>
-                                    </button>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -75,34 +86,41 @@
                 <div class="card">
                     <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
                         <h3 class="text-lg leading-6 font-medium text-gray-900">
-                            Meta Data
+                            CategoryName
                         </h3>
                     </div>
                     <div class="px-4 py-5 sm:px-6">
                         <dl class="grid grid-cols-1 col-gap-4 row-gap-8 sm:grid-cols-2">
                             <div class="sm:col-span-1">
                                 <dt class="text-sm leading-5 font-medium text-gray-500">
-                                    Full name
+                                    Last Updated
                                 </dt>
                                 <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                    Margot Foster
+                                    {{ dateLongFormat($message->updated_at) }}
                                 </dd>
                             </div>
                             <div class="sm:col-span-1">
                                 <dt class="text-sm leading-5 font-medium text-gray-500">
-                                    Application for
+                                    Email Address
                                 </dt>
                                 <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                    Backend Developer
+                                    {{ $message->owner->email }}
                                 </dd>
                             </div>
                         </dl>
                     </div>
 
+                    <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                        <h4 class="text-sm leading-5 font-medium text-gray-500">
+                            Labels
+                        </h4>
+                        @livewire('shared.label', ['label' => 'Accounts Me', 'id' => 1, 'type' => 'message'])
+                    </div>
+
                     <div class="sm:col-span-2">
                         <div class="p-8">
                             <dt class="text-sm leading-5 font-medium text-gray-500">
-                                Attachments
+                                Attached Files
                             </dt>
                             <dd class="mt-1 text-sm leading-5 text-gray-900">
                                 <ul class="border border-gray-200 rounded-md">
