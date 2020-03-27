@@ -38,3 +38,19 @@ function dateTimeHuman($dt)
 {
     return Carbon::parse($dt)->diffForHumans();
 }
+
+function truncateWords($stringText, $length = 10)
+{
+    $length = abs((int) $length);
+
+    if (strlen($stringText) > $length) {
+        $stringText = preg_replace("/^(.{1,$length})(\s.*|$)/s", '\\1...', $stringText) . '...';
+    }
+
+    return ($stringText);
+}
+
+function truncate($string, $length = 20)
+{
+    return trim(substr($string, 0, $length) . '...');
+}

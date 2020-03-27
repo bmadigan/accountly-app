@@ -104,7 +104,7 @@
                                     Email Address
                                 </dt>
                                 <dd class="mt-1 text-sm leading-5 text-gray-900">
-                                    {{ $message->owner->email }}
+                                    {{ truncate($message->owner->email, 18) }}
                                 </dd>
                             </div>
                         </dl>
