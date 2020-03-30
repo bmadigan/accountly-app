@@ -1,4 +1,4 @@
-<div class="mt-4 bg-blue-50 rounded px-4 py-5 border-b border-blue-200 sm:px-6">
+<div class="mt-4 bg-slate-100 rounded px-4 py-5 border-b border-slate-200 sm:px-6">
     <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
         <div class="ml-4 mt-4">
             <div class="flex items-center">
@@ -19,7 +19,7 @@
             {{ dateLongFormat($comment->updated_at) }}
         </div>
     </div>
-    <div class="mt-3 border-t border-blue-100 pt-3 text-sm text-gray-600">
+    <div class="mt-3 border-t border-slate-200 pt-3 text-sm text-gray-600">
         {{ $comment->body }}
     </div>
 </div>
