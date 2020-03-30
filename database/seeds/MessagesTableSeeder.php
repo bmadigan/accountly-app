@@ -21,11 +21,23 @@ class MessagesTableSeeder extends Seeder
         $c3 = factory(MessageCategory::class)->create(['team_id' => $currentTeam->id, 'category_name' => 'Annoucement']);
 
         // Create some messages
-        factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id, 'category_id' => $c1->id]);
-        factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id]);
-        factory(Message::class)->create(['created_by' => $staff->id, 'team_id' => $currentTeam->id, 'category_id' => $c2->id]);
+        $m1 = factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id, 'category_id' => $c1->id]);
+        $comments = factory(App\Models\Comment::class, rand(1, 4))->make(['message_id' => $m1->id, 'owner_id' => $me->id]);
+        $m1->comments()->saveMany($comments);
+
+        $m2 = factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id]);
+        $comments = factory(App\Models\Comment::class, rand(1, 4))->make(['message_id' => $m2->id, 'owner_id' => $staff->id]);
+        $m2->comments()->saveMany($comments);
+
+        $m3 = factory(Message::class)->create(['created_by' => $staff->id, 'team_id' => $currentTeam->id, 'category_id' => $c2->id]);
+        $comments = factory(App\Models\Comment::class, rand(1, 4))->make(['message_id' => $m3->id, 'owner_id' => $me->id]);
+        $m3->comments()->saveMany($comments);
+
         factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id, 'category_id' => $c2->id]);
-        factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id, 'category_id' => $c3->id]);
+        $m4 = factory(Message::class)->create(['created_by' => $me->id, 'team_id' => $currentTeam->id, 'category_id' => $c3->id]);
+        $comments = factory(App\Models\Comment::class, rand(1, 4))->make(['message_id' => $m4->id, 'owner_id' => $me->id]);
+        $m4->comments()->saveMany($comments);
+
         factory(Message::class)->create(['created_by' => $staff->id, 'team_id' => $currentTeam->id, 'category_id' => $c1->id]);
 
         // Random messages from random users
@@ -34,6 +46,10 @@ class MessagesTableSeeder extends Seeder
             $message->created_by = $u->id;
             $message->team_id = $u->current_team_id;
             $message->save();
+
+            // Seed the relation with 5 purchases
+            $comments = factory(App\Models\Comment::class, rand(1, 4))->make();
+            $message->comments()->saveMany($comments);
         });
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddTeamsTable extends Migration
+class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class AddTeamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('teams', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->uuid('uuid')->index();
-            $table->foreignId('owner_id')->index();
-            $table->string('name');
-            $table->string('slug')->nullable()->unique();
-            $table->text('photo_url')->nullable();
+            $table->foreignId('message_id');
+            $table->foreignId('owner_id');
+            $table->text('body');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class AddTeamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teams');
+        Schema::dropIfExists('comments');
     }
 }

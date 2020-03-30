@@ -80,6 +80,78 @@
                     </div>
                 </div>
                 <!--/card-->
+
+                <!--Comments/Discussion-->
+                <div class="md:mt-8 mt-2 overflow-hidden">
+                    <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
+                        Discussion
+                    </h2>
+                    <div class="mt-6 border-t-2 border-gray-200 pt-6">
+
+                        <!--A Comment-->
+                        <div class="mt-4 bg-blue-50 rounded px-4 py-5 border-b border-blue-200 sm:px-6">
+                            <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
+                                <div class="ml-4 mt-4">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-12 w-12 rounded-full"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="" />
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                                Tom Cook
+                                            </h3>
+                                            <p class="text-sm leading-5 text-gray-500">
+                                                Account Manager
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-4 mt-4 text-sm text-gray-500 flex-shrink-0 flex">
+                                    May 22, 2019
+                                </div>
+                            </div>
+                            <div class="mt-3 border-t border-blue-100 pt-3 text-sm text-gray-600">
+                                Message stuff?
+                            </div>
+                        </div>
+                        <!--/comment-card-->
+
+                        <h2 class="mt-6 text-2xl leading-9 font-bold text-gray-700">
+                            Add A Comment
+                        </h2>
+                        <div class="mt-6 border-t-2 border-gray-200 pt-6">
+                            <div class="mt-5 md:mt-0 md:col-span-2">
+                                <form action="#" method="POST">
+                                    <div class="shadow sm:rounded-md sm:overflow-hidden">
+                                        <div class="px-4 py-5 bg-white sm:p-6">
+                                            <div class="mt-2">
+                                                <div class="rounded-md shadow-sm">
+                                                    <textarea id="about" rows="3"
+                                                        class="form-textarea mt-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                                                </div>
+                                                <p class="mt-2 text-sm text-gray-500">
+                                                    Do we need some sort of brief description here at all?
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                                            <span class="inline-flex rounded-md shadow-sm">
+                                                <button type="submit"
+                                                    class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                                                    Add Comment
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--Add-Comment-Card-->
+                        </div>
+                    </div>
+                </div>
+                <!--/discussion-->
             </div>
 
             <div class="md:w-2/6 w-full">

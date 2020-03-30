@@ -16,9 +16,10 @@ class CreateMessagesTable extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->uuid('uuid')->index();
-            $table->unsignedBigInteger('created_by')->index();
-            $table->unsignedBigInteger('team_id')->index();
-            $table->unsignedBigInteger('category_id')->index()->nullable();
+            $table->foreignId('created_by')->index();
+            $table->foreignId('team_id')->index();
+            $table->foreignId('category_id')->index()->nullable();
+            $table->unsignedInteger('comment_count')->default(0);
             $table->string('title');
             $table->text('body');
             $table->boolean('is_archived')->default(false);

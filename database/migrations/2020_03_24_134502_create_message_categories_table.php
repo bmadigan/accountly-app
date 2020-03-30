@@ -16,7 +16,7 @@ class CreateMessageCategoriesTable extends Migration
         Schema::create('message_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->uuid('uuid')->index();
-            $table->unsignedBigInteger('team_id');
+            $table->foreignId('team_id');
             $table->string('category_name');
             $table->timestamps();
         });

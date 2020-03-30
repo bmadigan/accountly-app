@@ -13,25 +13,24 @@
                     </div>
                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                            <div class="text-sm leading-5 font-medium text-indigo-600 truncate">
+                            <div class="text-sm leading-5 font-medium font-semibold truncate">
                                 {{ $message->title }}
                             </div>
-                            <div class="mt-2 flex items-center text-xs leading-5 text-gray-500">
-                                <time
+                            <div class="mt-2 flex items-center text-sm leading-5 text-gray-500">
+                                {{ $message->owner->name }} -
+                                <time class="ml-2"
                                     datetime="{{ dateShortFormat($message->created_at) }}">{{ dateTimeHuman($message->created_at) }}</time>
                             </div>
                         </div>
                         <div class="hidden md:block">
                             <div>
                                 <div class="text-sm leading-5 text-gray-900">
-                                    {{ $message->owner->name }}
-                                </div>
-                                <div class="mt-2 flex items-center">
                                     <span
-                                        class="ml-auto inline-block py-0.5 text-green-700 px-3 text-xs leading-4 rounded-full bg-green-100">
-                                        19
+                                        class="ml-auto inline-block py-0.5 text-green-700 px-3 text-sm leading-4 rounded-full bg-green-100">
+                                        {{ $message->comment_count }}
                                     </span>
-                                    <span class="text-xs text-gray-500 ml-1">Comments</span>
+                                    <span
+                                        class="text-xs text-gray-500">{{ strPlural('comment', $message->comment_count) }}</span>
                                 </div>
                             </div>
                         </div>

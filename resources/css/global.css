@@ -2,6 +2,13 @@
     @apply max-w-7xl mx-auto py-6;
 }
 
+a {
+    @apply text-red-500;
+}
+a:hover {
+    @apply text-blue-600;
+}
+
 .spinner {
   -webkit-animation: rotate 2s linear infinite;
           animation: rotate 2s linear infinite;

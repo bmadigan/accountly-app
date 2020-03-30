@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 
 function gravatar_url($email)
@@ -53,4 +54,9 @@ function truncateWords($stringText, $length = 10)
 function truncate($string, $length = 20)
 {
     return trim(substr($string, 0, $length) . '...');
+}
+
+function strPlural($string, $count)
+{
+    return Str::plural($string, $count);
 }

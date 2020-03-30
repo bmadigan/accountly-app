@@ -14,8 +14,8 @@ class AddTeamUsersTable extends Migration
     public function up()
     {
         Schema::create('team_users', function (Blueprint $table) {
-            $table->unsignedBigInteger('team_id')->index();
-            $table->unsignedBigInteger('user_id')->index();
+            $table->foreignId('team_id')->index();
+            $table->foreignId('user_id')->index();
             //$table->string('role', 20);
 
             $table->unique(['team_id', 'user_id']);
