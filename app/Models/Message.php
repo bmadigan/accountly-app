@@ -33,19 +33,4 @@ class Message extends Model
     {
         return $this->hasMany(Comment::class);
     }
-
-    // public function addReply($reply)
-    // {
-    //     $reply = $this->replies()->create($reply);
-
-    //     event(new ThreadReceivedNewReply($reply));
-
-    //     return $reply;
-    // }
-    public function hasUpdatesFor($user)
-    {
-        $key = $user->visitedMessageCacheKey($this);
-
-        return $this->updated_at > cache($key);
-    }
 }

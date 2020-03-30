@@ -35,17 +35,4 @@ class User extends Authenticatable
     {
         return ($this->staff);
     }
-
-    public function read($message)
-    {
-        cache()->forever(
-            $this->visitedMessageCacheKey($message),
-            Carbon::now()
-        );
-    }
-
-    public function visitedMessageCacheKey($message)
-    {
-        return sprintf("users.%s.visits.%s", $this->id, $message->id);
-    }
 }
