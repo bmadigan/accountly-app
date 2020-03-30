@@ -33,4 +33,30 @@ class Message extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function subscriptions()
+    {
+        return $this->hasMany(MessageSubscription::class);
+    }
+
+    public function subscribe($userId = null)
+    {
+        $this->subscriptions()->create([
+            'user_id' => $userId ?: auth()->user()->id,
+        ]);
+    }
+
+    public function unsubscribe($userId = null)
+    {
+        $this->subscriptions()
+            ->where('user_id', $userId ?: auth()->user()->id)
+            ->delete();
+    }
+
+    public function getIsSubscribedToAttribute()
+    {
+        return $this->subscriptions()
+            ->where('user_id', auth()->id())
+            ->exists();
+    }
 }
