@@ -142,7 +142,7 @@
                         @livewire('shared.label', ['label' => 'Accounts Me', 'id' => 1, 'type' => 'message'])
                     </div>
 
-                    <div class="sm:col-span-2">
+                    <div class="sm:col-span-2 border-b border-gray-200">
                         <div class="p-8">
                             <dt class="text-sm leading-5 font-medium text-gray-500">
                                 Attached Files
@@ -171,6 +171,16 @@
                                 </ul>
                             </dd>
                         </div>
+                    </div>
+
+                    <div class="px-4 py-5 sm:px-6">
+                        <h4 class="text-md leading-5 font-medium text-gray-600">
+                            You Are Subscribed!
+                        </h4>
+                        <p class="text-sm mt-2 leading-5 text-gray-500">
+                            You will be notified whenever someone adds a comment to this message.
+                        </p>
+                        <button class="mt-4 btn btn-outline">Unsubscribe me</button>
                     </div>
                 </div>
             </div>
