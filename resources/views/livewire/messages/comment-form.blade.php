@@ -10,9 +10,7 @@
                                     <textarea id="about" rows="3" wire:model="body"
                                         class="form-textarea mt-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
                                 </div>
-                                <p class="mt-2 text-sm text-gray-500">
-                                    Do we need some sort of brief description here at all? Liveiwre?
-                                </p>
+                                @error('body')<p class="f-error">{{ $message }}</p>@enderror
                             </div>
                         </div>
                         <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
