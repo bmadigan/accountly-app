@@ -83,40 +83,20 @@
 
                 <!--Comments/Discussion-->
                 <div class="md:mt-8 mt-2 overflow-hidden">
-                    <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
-                        Discussion
-                    </h2>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
+                            Discussion
+                        </h2>
+                        <div>
+                            <span
+                                class="text-md bg-gray-600 text-white font-medium py-1 px-3 rounded-full">{{ $message->comment_count }}</span>
+                        </div>
+                    </div>
                     <div class="mt-6 border-t-2 border-gray-200 pt-6">
 
-                        <!--A Comment-->
-                        <div class="mt-4 bg-blue-50 rounded px-4 py-5 border-b border-blue-200 sm:px-6">
-                            <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
-                                <div class="ml-4 mt-4">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0">
-                                            <img class="h-12 w-12 rounded-full"
-                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                alt="" />
-                                        </div>
-                                        <div class="ml-4">
-                                            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                                Tom Cook
-                                            </h3>
-                                            <p class="text-sm leading-5 text-gray-500">
-                                                Account Manager
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ml-4 mt-4 text-sm text-gray-500 flex-shrink-0 flex">
-                                    May 22, 2019
-                                </div>
-                            </div>
-                            <div class="mt-3 border-t border-blue-100 pt-3 text-sm text-gray-600">
-                                Message stuff?
-                            </div>
-                        </div>
-                        <!--/comment-card-->
+                        @foreach($message->comments as $comment)
+                        <x-comment :comment="$comment" />
+                        @endforeach
 
                         <h2 class="mt-6 text-2xl leading-9 font-bold text-gray-700">
                             Add A Comment
