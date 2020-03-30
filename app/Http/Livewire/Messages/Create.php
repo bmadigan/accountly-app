@@ -24,15 +24,18 @@ class Create extends Component
             'body' => 'required',
         ]);
 
-        Message::create([
+        $message = Message::create([
             'created_by' => auth()->user()->id,
             'team_id' => auth()->user()->currentTeam()->id,
             'title' => $this->title,
             'body' => $this->body,
         ]);
 
-        session()->flash('success', 'Message created');
+        // Subscribe the user to the message automatically
+        $message->subscribe();
 
-        return redirect()->route('messages.index');
+        session()->flash('success', 'Your Message has been created');
+
+        return redirect()->route('messages.show', $message->uuid);
     }
 }
