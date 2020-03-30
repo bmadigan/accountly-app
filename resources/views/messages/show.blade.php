@@ -174,13 +174,7 @@
                     </div>
 
                     <div class="px-4 py-5 sm:px-6">
-                        <h4 class="text-md leading-5 font-medium text-gray-600">
-                            You Are Subscribed!
-                        </h4>
-                        <p class="text-sm mt-2 leading-5 text-gray-500">
-                            You will be notified whenever someone adds a comment to this message.
-                        </p>
-                        <button class="mt-4 btn btn-outline">Unsubscribe me</button>
+                        @livewire('messages.subscriptions', ['message' => $message])
                     </div>
                 </div>
             </div>

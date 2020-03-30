@@ -53,7 +53,7 @@ class Message extends Model
             ->delete();
     }
 
-    public function getIsSubscribedToAttribute()
+    public function getIsSubscribedAttribute()
     {
         return $this->subscriptions()
             ->where('user_id', auth()->id())
