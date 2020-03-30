@@ -101,7 +101,7 @@
                         <h2 class="mt-6 text-2xl leading-9 font-bold text-gray-700">
                             Add A Comment
                         </h2>
-                        @livewire('messages.comment-form', ['mid' => $message->id])
+                        @livewire('messages.comment-form', ['message' => $message])
                     </div>
                 </div>
                 <!--/discussion-->

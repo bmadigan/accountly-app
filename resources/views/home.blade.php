@@ -20,7 +20,7 @@
                     <div class="my-4">
                         <button class="btn btn-primary">Im a Button</button>
 
-                        <button class="btn btn-secondary">Im a 2nd Button</button>
+                        <button class="btn btn-secondary">Notify</button>
                     </div>
             </div>
         </div>

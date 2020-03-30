@@ -126,17 +126,17 @@ a:hover {
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #4b5563;
+  background-color: #5B6A8B;
   border-width: 1px;
   border-color: transparent;
 }
 
 .btn-secondary:hover {
-  background-color: #6b7280;
+  background-color: #7181A2;
 }
 
 .btn-secondary:focus {
-  border-color: #374151;
+  border-color: #49556F;
   outline: 0;
   box-shadow: 0 0 0 3px rgba(159, 166, 178, 0.45);
 }

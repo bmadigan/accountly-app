@@ -8,11 +8,11 @@ use Livewire\Component;
 class CommentForm extends Component
 {
     public $body;
-    public $messageId;
+    public $message;
 
-    public function mount($mid)
+    public function mount($message)
     {
-        $this->messageId = $mid;
+        $this->message = $message;
     }
 
     public function submit()
@@ -23,9 +23,13 @@ class CommentForm extends Component
 
         Comment::create([
             'body' => $this->body,
-            'message_id' => $this->messageId,
+            'message_id' => $this->message->id,
             'owner_id' => auth()->user()->id,
         ]);
+
+        session()->flash('success', 'Your comment was succesfully created.');
+
+        return redirect()->to(route('messages.show', $this->message->uuid));
     }
 
     public function render()

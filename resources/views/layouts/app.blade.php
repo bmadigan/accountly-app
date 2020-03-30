@@ -38,11 +38,11 @@
     <div class="min-h-screen flex flex-col">
         <div class="flex-grow">
             @include('shared.nav')
-
             @yield('content')
         </div>
 
         @include('shared.footer')
+        <x-flash />
     </div>
     @livewireScripts
 </body>
