@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Support\Str;
 use App\Traits\CanJoinTeams;
+use Illuminate\Support\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Dyrynda\Database\Support\GeneratesUuid;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -33,5 +34,18 @@ class User extends Authenticatable
     public function isStaff()
     {
         return ($this->staff);
+    }
+
+    public function read($message)
+    {
+        cache()->forever(
+            $this->visitedMessageCacheKey($message),
+            Carbon::now()
+        );
+    }
+
+    public function visitedMessageCacheKey($message)
+    {
+        return sprintf("users.%s.visits.%s", $this->id, $message->id);
     }
 }

@@ -42,4 +42,10 @@ class Message extends Model
 
     //     return $reply;
     // }
+    public function hasUpdatesFor($user)
+    {
+        $key = $user->visitedMessageCacheKey($this);
+
+        return $this->updated_at > cache($key);
+    }
 }
