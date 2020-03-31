@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9a32b8bb89444dcb68b07e61d6a70d7",
+    "content-hash": "9001ddfb81e9f343a88823ee4aec84f2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3815,6 +3815,50 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "beyondcode/tinkerwell-helper",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/tinkerwell-helper.git",
+                "reference": "1993c888ef64b76a24804b8493421cb7c9b5bd43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/tinkerwell-helper/zipball/1993c888ef64b76a24804b8493421cb7c9b5bd43",
+                "reference": "1993c888ef64b76a24804b8493421cb7c9b5bd43",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0|^7.0",
+                "php": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Open Tinkerwell from your Laravel project.",
+            "homepage": "https://github.com/beyondcode/tinkerwell-helper",
+            "keywords": [
+                "beyondcode",
+                "tinkerwell-helper"
+            ],
+            "time": "2020-03-07T11:29:05+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.3.0",

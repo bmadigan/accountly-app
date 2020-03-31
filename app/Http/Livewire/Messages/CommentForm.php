@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Messages;
 
 use App\Models\Comment;
 use Livewire\Component;
+use App\Notifications\NotifySubscribers;
 
 class CommentForm extends Component
 {
@@ -21,11 +22,14 @@ class CommentForm extends Component
             'body' => 'required|min:3',
         ]);
 
-        Comment::create([
+        $comment = Comment::create([
             'body' => $this->body,
             'message_id' => $this->message->id,
             'owner_id' => auth()->user()->id,
         ]);
+
+        // Notify subscribers
+        auth()->user()->notify(new NotifySubscribers($this->message, $comment));
 
         session()->flash('success', 'Your comment was succesfully created.');
 

@@ -51,7 +51,7 @@
                                         x-transition:leave-start="transform opacity-100 scale-100"
                                         x-transition:leave-end="transform opacity-0 scale-95"
                                         class="origin-top-right absolute right-0 mt-2 w-56 min-w-max-content rounded-md shadow-lg">
-                                        <div class="rounded-md bg-white shadow-xs z-20">
+                                        <div class="rounded-md bg-white shadow-xs z-50 overflow-auto">
                                             <div class="border-t border-gray-100"></div>
                                             <div class="py-1">
                                                 <a href="#"
