@@ -6,12 +6,16 @@
   padding-bottom: 1.5rem;
 }
 
-a {
-  color: #f05252;
+.link {
+  font-weight: 500;
+  color: #1c64f2;
 }
 
-a:hover {
-  color: #1c64f2;
+.link:hover {
+  color: #3f83f8;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .spinner {

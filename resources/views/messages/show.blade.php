@@ -114,7 +114,7 @@
                             {{ optional($message->category)->category_name }}
                         </h3>
                     </div>
-                    <div class="px-4 py-5 sm:px-6">
+                    <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
                         <dl class="grid grid-cols-1 col-gap-4 row-gap-8 sm:grid-cols-2">
                             <div class="sm:col-span-1">
                                 <dt class="text-sm leading-5 font-medium text-gray-500">
@@ -135,12 +135,12 @@
                         </dl>
                     </div>
 
-                    <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+{{--                     <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
                         <h4 class="text-sm leading-5 font-medium text-gray-500">
                             Labels
                         </h4>
                         @livewire('shared.label', ['label' => 'Accounts Me', 'id' => 1, 'type' => 'message'])
-                    </div>
+                    </div> --}}
 
                     <div class="sm:col-span-2 border-b border-gray-200">
                         <div class="p-8">
@@ -162,8 +162,7 @@
                                             </span>
                                         </div>
                                         <div class="ml-4 flex-shrink-0">
-                                            <a href="#"
-                                                class="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out">
+                                            <a href="#" class="link">
                                                 Download
                                             </a>
                                         </div>
