@@ -25,6 +25,22 @@ class UsersTableSeeder extends Seeder
         ]);
         $myTeam->users()->attach($me);
 
+        // Create a 2nd Test account for Karen
+        $karen = factory(User::class)->create([
+            'name' => 'Karen Madigan',
+            'email' => 'karen@madigan.com',
+            'current_team_id' => $myTeam->id,
+        ]);
+        $myTeam->users()->attach($karen);
+
+        // May as well create one more
+        $cam = factory(User::class)->create([
+            'name' => 'Cam Madigan',
+            'email' => 'cam@madigan.com',
+            'current_team_id' => $myTeam->id,
+        ]);
+        $myTeam->users()->attach($cam);
+
         // I also need a Staff member account
         $me = factory(User::class)->create([
             'name' => 'Brad Wessa',

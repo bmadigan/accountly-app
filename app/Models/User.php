@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Arr;
 use App\Traits\CanJoinTeams;
+use Rackbeat\UIAvatars\HasAvatar;
 use Illuminate\Support\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Dyrynda\Database\Support\GeneratesUuid;
@@ -12,7 +14,19 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable, CanJoinTeams, GeneratesUuid;
+    use Notifiable, CanJoinTeams, GeneratesUuid, HasAvatar;
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // Automatically add a default avatar for the User
+        // static::creating(function ($user) use ($hex, $avatar) {
+        //     //$av = $avatar->name($user->name)
+
+        //     $user->update(['avatar' => $av]);
+        // });
+    }
 
     protected $fillable = [
         'name', 'email', 'password',
@@ -26,9 +40,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function getPhotoUrlAttribute($value)
+    public function getPhotoUrlAttribute()
     {
-        return empty($value) ? 'https://www.gravatar.com/avatar/' . md5(Str::lower($this->email)) . '.jpg?s=200&d=mm' : url($value);
+        return $this->getUrlfriendlyAvatar();
+        //return empty($value) ? 'https://www.gravatar.com/avatar/' . md5(Str::lower($this->email)) . '.jpg?s=200&d=mm' : url($value);
     }
 
     public function isStaff()
