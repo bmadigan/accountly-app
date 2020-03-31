@@ -1,0 +1,40 @@
+https://laravel-livewire.com/docs/making-components
+
+Tailwind UI
+https://tailwindui.com/components/application-ui/headings/page-headings
+
+Crater Code:
+https://github.com/bytefury/crater
+
+Spark Tests:
+https://github.com/laravel/spark-tests
+
+Spark Aurelius:
+https://github.com/laravel/spark-aurelius
+
+AlpineJS
+https://github.com/alpinejs/alpine
+
+
+Notifications:
+There is a brief explanation in this doc that explains it.
+https://joedixon.co.uk/adding-notifications-to-laravelio
+
+
+I LOVE how Basecamp does their messaging
+https://3.basecamp.com/3953779/buckets/6635132/message_boards/918281204/messages/new
+
+Trix
+https://github.com/Te7a-Houdini/laravel-trix
+
+A User can:
+- Belong to a team
+- Own a team
+
+A Team can:
+- has 1 owner
+- can have many users
+
+
+@Mentions
+https://laracasts.com/series/lets-build-a-forum-with-laravel/episodes/56
