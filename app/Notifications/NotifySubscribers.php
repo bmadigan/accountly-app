@@ -42,8 +42,9 @@ class NotifySubscribers extends Notification
     public function toDatabase(User $user)
     {
         return [
-            'message' => $this->message,
-            'comment' => $this->comment,
+            'message' => $this->message->title,
+            'message_id' => $this->message->uuid,
+            'comment_by' => $this->comment->owner->name,
         ];
     }
 }

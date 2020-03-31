@@ -17,5 +17,5 @@ Route::group(['middleware' => ['has.team', 'auth']], function () {
 });
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('missing-team')->uses('MissingTeamController')->name('teams.missing');
+    //Route::get('missing-team')->uses('MissingTeamController')->name('teams.missing');
 });

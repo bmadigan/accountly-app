@@ -8,7 +8,8 @@ class VerifyUserHasTeam
 {
     public function handle($request, Closure $next)
     {
-        if ($request->user() && ! $request->user()->hasTeams()) {
+        // Check for regular user belongs to a team
+        if ($request->user() && !$request->user()->hasTeams()) {
             return redirect()->route('teams.missing');
         }
 
