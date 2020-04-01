@@ -54,7 +54,9 @@
             </div>
             <div class="hidden z-50 lg:block lg:ml-4">
                 <div class="flex items-center">
-                    <x-notifications />
+
+                    @livewire('shared.notifications')
+
                     <div @click.away="open = false" class="ml-4 relative flex-shrink-0" x-data="{ open: false }">
                         <div>
                             <button @click="open = !open"

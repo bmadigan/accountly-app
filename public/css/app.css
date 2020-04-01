@@ -1701,6 +1701,18 @@ video {
   background-color: #8871A2;
 }
 
+.bg-spacing-72 {
+  background-color: 18rem;
+}
+
+.bg-spacing-84 {
+  background-color: 21rem;
+}
+
+.bg-spacing-96 {
+  background-color: 24rem;
+}
+
 .group:hover .group-hover\:bg-transparent {
   background-color: transparent;
 }
@@ -2231,6 +2243,18 @@ video {
 
 .group:hover .group-hover\:bg-orchid {
   background-color: #8871A2;
+}
+
+.group:hover .group-hover\:bg-spacing-72 {
+  background-color: 18rem;
+}
+
+.group:hover .group-hover\:bg-spacing-84 {
+  background-color: 21rem;
+}
+
+.group:hover .group-hover\:bg-spacing-96 {
+  background-color: 24rem;
 }
 
 .group:focus .group-focus\:bg-transparent {
@@ -2765,6 +2789,18 @@ video {
   background-color: #8871A2;
 }
 
+.group:focus .group-focus\:bg-spacing-72 {
+  background-color: 18rem;
+}
+
+.group:focus .group-focus\:bg-spacing-84 {
+  background-color: 21rem;
+}
+
+.group:focus .group-focus\:bg-spacing-96 {
+  background-color: 24rem;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -3295,6 +3331,18 @@ video {
 
 .hover\:bg-orchid:hover {
   background-color: #8871A2;
+}
+
+.hover\:bg-spacing-72:hover {
+  background-color: 18rem;
+}
+
+.hover\:bg-spacing-84:hover {
+  background-color: 21rem;
+}
+
+.hover\:bg-spacing-96:hover {
+  background-color: 24rem;
 }
 
 .focus\:bg-transparent:focus {
@@ -3829,6 +3877,18 @@ video {
   background-color: #8871A2;
 }
 
+.focus\:bg-spacing-72:focus {
+  background-color: 18rem;
+}
+
+.focus\:bg-spacing-84:focus {
+  background-color: 21rem;
+}
+
+.focus\:bg-spacing-96:focus {
+  background-color: 24rem;
+}
+
 .active\:bg-transparent:active {
   background-color: transparent;
 }
@@ -4359,6 +4419,18 @@ video {
 
 .active\:bg-orchid:active {
   background-color: #8871A2;
+}
+
+.active\:bg-spacing-72:active {
+  background-color: 18rem;
+}
+
+.active\:bg-spacing-84:active {
+  background-color: 21rem;
+}
+
+.active\:bg-spacing-96:active {
+  background-color: 24rem;
 }
 
 .bg-bottom {
@@ -4973,6 +5045,18 @@ video {
   border-color: #8871A2;
 }
 
+.border-spacing-72 {
+  border-color: 18rem;
+}
+
+.border-spacing-84 {
+  border-color: 21rem;
+}
+
+.border-spacing-96 {
+  border-color: 24rem;
+}
+
 .group:hover .group-hover\:border-transparent {
   border-color: transparent;
 }
@@ -5503,6 +5587,18 @@ video {
 
 .group:hover .group-hover\:border-orchid {
   border-color: #8871A2;
+}
+
+.group:hover .group-hover\:border-spacing-72 {
+  border-color: 18rem;
+}
+
+.group:hover .group-hover\:border-spacing-84 {
+  border-color: 21rem;
+}
+
+.group:hover .group-hover\:border-spacing-96 {
+  border-color: 24rem;
 }
 
 .group:focus .group-focus\:border-transparent {
@@ -6037,6 +6133,18 @@ video {
   border-color: #8871A2;
 }
 
+.group:focus .group-focus\:border-spacing-72 {
+  border-color: 18rem;
+}
+
+.group:focus .group-focus\:border-spacing-84 {
+  border-color: 21rem;
+}
+
+.group:focus .group-focus\:border-spacing-96 {
+  border-color: 24rem;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -6569,6 +6677,18 @@ video {
   border-color: #8871A2;
 }
 
+.hover\:border-spacing-72:hover {
+  border-color: 18rem;
+}
+
+.hover\:border-spacing-84:hover {
+  border-color: 21rem;
+}
+
+.hover\:border-spacing-96:hover {
+  border-color: 24rem;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -7099,6 +7219,18 @@ video {
 
 .focus\:border-orchid:focus {
   border-color: #8871A2;
+}
+
+.focus\:border-spacing-72:focus {
+  border-color: 18rem;
+}
+
+.focus\:border-spacing-84:focus {
+  border-color: 21rem;
+}
+
+.focus\:border-spacing-96:focus {
+  border-color: 24rem;
 }
 
 .rounded-none {
@@ -17021,6 +17153,66 @@ video {
   color: #8871A2;
 }
 
+.placeholder-spacing-72::-webkit-input-placeholder {
+  color: 18rem;
+}
+
+.placeholder-spacing-72::-moz-placeholder {
+  color: 18rem;
+}
+
+.placeholder-spacing-72:-ms-input-placeholder {
+  color: 18rem;
+}
+
+.placeholder-spacing-72::-ms-input-placeholder {
+  color: 18rem;
+}
+
+.placeholder-spacing-72::placeholder {
+  color: 18rem;
+}
+
+.placeholder-spacing-84::-webkit-input-placeholder {
+  color: 21rem;
+}
+
+.placeholder-spacing-84::-moz-placeholder {
+  color: 21rem;
+}
+
+.placeholder-spacing-84:-ms-input-placeholder {
+  color: 21rem;
+}
+
+.placeholder-spacing-84::-ms-input-placeholder {
+  color: 21rem;
+}
+
+.placeholder-spacing-84::placeholder {
+  color: 21rem;
+}
+
+.placeholder-spacing-96::-webkit-input-placeholder {
+  color: 24rem;
+}
+
+.placeholder-spacing-96::-moz-placeholder {
+  color: 24rem;
+}
+
+.placeholder-spacing-96:-ms-input-placeholder {
+  color: 24rem;
+}
+
+.placeholder-spacing-96::-ms-input-placeholder {
+  color: 24rem;
+}
+
+.placeholder-spacing-96::placeholder {
+  color: 24rem;
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -19679,6 +19871,66 @@ video {
 
 .focus\:placeholder-orchid:focus::placeholder {
   color: #8871A2;
+}
+
+.focus\:placeholder-spacing-72:focus::-webkit-input-placeholder {
+  color: 18rem;
+}
+
+.focus\:placeholder-spacing-72:focus::-moz-placeholder {
+  color: 18rem;
+}
+
+.focus\:placeholder-spacing-72:focus:-ms-input-placeholder {
+  color: 18rem;
+}
+
+.focus\:placeholder-spacing-72:focus::-ms-input-placeholder {
+  color: 18rem;
+}
+
+.focus\:placeholder-spacing-72:focus::placeholder {
+  color: 18rem;
+}
+
+.focus\:placeholder-spacing-84:focus::-webkit-input-placeholder {
+  color: 21rem;
+}
+
+.focus\:placeholder-spacing-84:focus::-moz-placeholder {
+  color: 21rem;
+}
+
+.focus\:placeholder-spacing-84:focus:-ms-input-placeholder {
+  color: 21rem;
+}
+
+.focus\:placeholder-spacing-84:focus::-ms-input-placeholder {
+  color: 21rem;
+}
+
+.focus\:placeholder-spacing-84:focus::placeholder {
+  color: 21rem;
+}
+
+.focus\:placeholder-spacing-96:focus::-webkit-input-placeholder {
+  color: 24rem;
+}
+
+.focus\:placeholder-spacing-96:focus::-moz-placeholder {
+  color: 24rem;
+}
+
+.focus\:placeholder-spacing-96:focus:-ms-input-placeholder {
+  color: 24rem;
+}
+
+.focus\:placeholder-spacing-96:focus::-ms-input-placeholder {
+  color: 24rem;
+}
+
+.focus\:placeholder-spacing-96:focus::placeholder {
+  color: 24rem;
 }
 
 .pointer-events-none {
@@ -22633,6 +22885,18 @@ video {
   color: #8871A2;
 }
 
+.text-spacing-72 {
+  color: 18rem;
+}
+
+.text-spacing-84 {
+  color: 21rem;
+}
+
+.text-spacing-96 {
+  color: 24rem;
+}
+
 .group:hover .group-hover\:text-transparent {
   color: transparent;
 }
@@ -23163,6 +23427,18 @@ video {
 
 .group:hover .group-hover\:text-orchid {
   color: #8871A2;
+}
+
+.group:hover .group-hover\:text-spacing-72 {
+  color: 18rem;
+}
+
+.group:hover .group-hover\:text-spacing-84 {
+  color: 21rem;
+}
+
+.group:hover .group-hover\:text-spacing-96 {
+  color: 24rem;
 }
 
 .group:focus .group-focus\:text-transparent {
@@ -23697,6 +23973,18 @@ video {
   color: #8871A2;
 }
 
+.group:focus .group-focus\:text-spacing-72 {
+  color: 18rem;
+}
+
+.group:focus .group-focus\:text-spacing-84 {
+  color: 21rem;
+}
+
+.group:focus .group-focus\:text-spacing-96 {
+  color: 24rem;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -24227,6 +24515,18 @@ video {
 
 .hover\:text-orchid:hover {
   color: #8871A2;
+}
+
+.hover\:text-spacing-72:hover {
+  color: 18rem;
+}
+
+.hover\:text-spacing-84:hover {
+  color: 21rem;
+}
+
+.hover\:text-spacing-96:hover {
+  color: 24rem;
 }
 
 .focus-within\:text-transparent:focus-within {
@@ -24761,6 +25061,18 @@ video {
   color: #8871A2;
 }
 
+.focus-within\:text-spacing-72:focus-within {
+  color: 18rem;
+}
+
+.focus-within\:text-spacing-84:focus-within {
+  color: 21rem;
+}
+
+.focus-within\:text-spacing-96:focus-within {
+  color: 24rem;
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -25293,6 +25605,18 @@ video {
   color: #8871A2;
 }
 
+.focus\:text-spacing-72:focus {
+  color: 18rem;
+}
+
+.focus\:text-spacing-84:focus {
+  color: 21rem;
+}
+
+.focus\:text-spacing-96:focus {
+  color: 24rem;
+}
+
 .active\:text-transparent:active {
   color: transparent;
 }
@@ -25823,6 +26147,18 @@ video {
 
 .active\:text-orchid:active {
   color: #8871A2;
+}
+
+.active\:text-spacing-72:active {
+  color: 18rem;
+}
+
+.active\:text-spacing-84:active {
+  color: 21rem;
+}
+
+.active\:text-spacing-96:active {
+  color: 24rem;
 }
 
 .text-xs {
@@ -32084,6 +32420,18 @@ video {
     background-color: #8871A2;
   }
 
+  .sm\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .sm\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .sm\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .group:hover .sm\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -32614,6 +32962,18 @@ video {
 
   .group:hover .sm\:group-hover\:bg-orchid {
     background-color: #8871A2;
+  }
+
+  .group:hover .sm\:group-hover\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:hover .sm\:group-hover\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:hover .sm\:group-hover\:bg-spacing-96 {
+    background-color: 24rem;
   }
 
   .group:focus .sm\:group-focus\:bg-transparent {
@@ -33148,6 +33508,18 @@ video {
     background-color: #8871A2;
   }
 
+  .group:focus .sm\:group-focus\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:focus .sm\:group-focus\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:focus .sm\:group-focus\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -33678,6 +34050,18 @@ video {
 
   .sm\:hover\:bg-orchid:hover {
     background-color: #8871A2;
+  }
+
+  .sm\:hover\:bg-spacing-72:hover {
+    background-color: 18rem;
+  }
+
+  .sm\:hover\:bg-spacing-84:hover {
+    background-color: 21rem;
+  }
+
+  .sm\:hover\:bg-spacing-96:hover {
+    background-color: 24rem;
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -34212,6 +34596,18 @@ video {
     background-color: #8871A2;
   }
 
+  .sm\:focus\:bg-spacing-72:focus {
+    background-color: 18rem;
+  }
+
+  .sm\:focus\:bg-spacing-84:focus {
+    background-color: 21rem;
+  }
+
+  .sm\:focus\:bg-spacing-96:focus {
+    background-color: 24rem;
+  }
+
   .sm\:active\:bg-transparent:active {
     background-color: transparent;
   }
@@ -34742,6 +35138,18 @@ video {
 
   .sm\:active\:bg-orchid:active {
     background-color: #8871A2;
+  }
+
+  .sm\:active\:bg-spacing-72:active {
+    background-color: 18rem;
+  }
+
+  .sm\:active\:bg-spacing-84:active {
+    background-color: 21rem;
+  }
+
+  .sm\:active\:bg-spacing-96:active {
+    background-color: 24rem;
   }
 
   .sm\:bg-bottom {
@@ -35356,6 +35764,18 @@ video {
     border-color: #8871A2;
   }
 
+  .sm\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .sm\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .sm\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .group:hover .sm\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -35886,6 +36306,18 @@ video {
 
   .group:hover .sm\:group-hover\:border-orchid {
     border-color: #8871A2;
+  }
+
+  .group:hover .sm\:group-hover\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:hover .sm\:group-hover\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:hover .sm\:group-hover\:border-spacing-96 {
+    border-color: 24rem;
   }
 
   .group:focus .sm\:group-focus\:border-transparent {
@@ -36420,6 +36852,18 @@ video {
     border-color: #8871A2;
   }
 
+  .group:focus .sm\:group-focus\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:focus .sm\:group-focus\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:focus .sm\:group-focus\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -36952,6 +37396,18 @@ video {
     border-color: #8871A2;
   }
 
+  .sm\:hover\:border-spacing-72:hover {
+    border-color: 18rem;
+  }
+
+  .sm\:hover\:border-spacing-84:hover {
+    border-color: 21rem;
+  }
+
+  .sm\:hover\:border-spacing-96:hover {
+    border-color: 24rem;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -37482,6 +37938,18 @@ video {
 
   .sm\:focus\:border-orchid:focus {
     border-color: #8871A2;
+  }
+
+  .sm\:focus\:border-spacing-72:focus {
+    border-color: 18rem;
+  }
+
+  .sm\:focus\:border-spacing-84:focus {
+    border-color: 21rem;
+  }
+
+  .sm\:focus\:border-spacing-96:focus {
+    border-color: 24rem;
   }
 
   .sm\:rounded-none {
@@ -47404,6 +47872,66 @@ video {
     color: #8871A2;
   }
 
+  .sm\:placeholder-spacing-72::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:placeholder-spacing-72::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:placeholder-spacing-72:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:placeholder-spacing-72::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:placeholder-spacing-72::placeholder {
+    color: 18rem;
+  }
+
+  .sm\:placeholder-spacing-84::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:placeholder-spacing-84::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:placeholder-spacing-84:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:placeholder-spacing-84::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:placeholder-spacing-84::placeholder {
+    color: 21rem;
+  }
+
+  .sm\:placeholder-spacing-96::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:placeholder-spacing-96::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:placeholder-spacing-96:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:placeholder-spacing-96::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:placeholder-spacing-96::placeholder {
+    color: 24rem;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -50062,6 +50590,66 @@ video {
 
   .sm\:focus\:placeholder-orchid:focus::placeholder {
     color: #8871A2;
+  }
+
+  .sm\:focus\:placeholder-spacing-72:focus::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-72:focus::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-72:focus:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-72:focus::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-72:focus::placeholder {
+    color: 18rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-84:focus::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-84:focus::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-84:focus:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-84:focus::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-84:focus::placeholder {
+    color: 21rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-96:focus::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-96:focus::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-96:focus:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-96:focus::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .sm\:focus\:placeholder-spacing-96:focus::placeholder {
+    color: 24rem;
   }
 
   .sm\:pointer-events-none {
@@ -53016,6 +53604,18 @@ video {
     color: #8871A2;
   }
 
+  .sm\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .sm\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .sm\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .group:hover .sm\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -53546,6 +54146,18 @@ video {
 
   .group:hover .sm\:group-hover\:text-orchid {
     color: #8871A2;
+  }
+
+  .group:hover .sm\:group-hover\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-spacing-96 {
+    color: 24rem;
   }
 
   .group:focus .sm\:group-focus\:text-transparent {
@@ -54080,6 +54692,18 @@ video {
     color: #8871A2;
   }
 
+  .group:focus .sm\:group-focus\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:focus .sm\:group-focus\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:focus .sm\:group-focus\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -54610,6 +55234,18 @@ video {
 
   .sm\:hover\:text-orchid:hover {
     color: #8871A2;
+  }
+
+  .sm\:hover\:text-spacing-72:hover {
+    color: 18rem;
+  }
+
+  .sm\:hover\:text-spacing-84:hover {
+    color: 21rem;
+  }
+
+  .sm\:hover\:text-spacing-96:hover {
+    color: 24rem;
   }
 
   .sm\:focus-within\:text-transparent:focus-within {
@@ -55144,6 +55780,18 @@ video {
     color: #8871A2;
   }
 
+  .sm\:focus-within\:text-spacing-72:focus-within {
+    color: 18rem;
+  }
+
+  .sm\:focus-within\:text-spacing-84:focus-within {
+    color: 21rem;
+  }
+
+  .sm\:focus-within\:text-spacing-96:focus-within {
+    color: 24rem;
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -55676,6 +56324,18 @@ video {
     color: #8871A2;
   }
 
+  .sm\:focus\:text-spacing-72:focus {
+    color: 18rem;
+  }
+
+  .sm\:focus\:text-spacing-84:focus {
+    color: 21rem;
+  }
+
+  .sm\:focus\:text-spacing-96:focus {
+    color: 24rem;
+  }
+
   .sm\:active\:text-transparent:active {
     color: transparent;
   }
@@ -56206,6 +56866,18 @@ video {
 
   .sm\:active\:text-orchid:active {
     color: #8871A2;
+  }
+
+  .sm\:active\:text-spacing-72:active {
+    color: 18rem;
+  }
+
+  .sm\:active\:text-spacing-84:active {
+    color: 21rem;
+  }
+
+  .sm\:active\:text-spacing-96:active {
+    color: 24rem;
   }
 
   .sm\:text-xs {
@@ -62468,6 +63140,18 @@ video {
     background-color: #8871A2;
   }
 
+  .md\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .md\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .md\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .group:hover .md\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -62998,6 +63682,18 @@ video {
 
   .group:hover .md\:group-hover\:bg-orchid {
     background-color: #8871A2;
+  }
+
+  .group:hover .md\:group-hover\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:hover .md\:group-hover\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:hover .md\:group-hover\:bg-spacing-96 {
+    background-color: 24rem;
   }
 
   .group:focus .md\:group-focus\:bg-transparent {
@@ -63532,6 +64228,18 @@ video {
     background-color: #8871A2;
   }
 
+  .group:focus .md\:group-focus\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:focus .md\:group-focus\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:focus .md\:group-focus\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -64062,6 +64770,18 @@ video {
 
   .md\:hover\:bg-orchid:hover {
     background-color: #8871A2;
+  }
+
+  .md\:hover\:bg-spacing-72:hover {
+    background-color: 18rem;
+  }
+
+  .md\:hover\:bg-spacing-84:hover {
+    background-color: 21rem;
+  }
+
+  .md\:hover\:bg-spacing-96:hover {
+    background-color: 24rem;
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -64596,6 +65316,18 @@ video {
     background-color: #8871A2;
   }
 
+  .md\:focus\:bg-spacing-72:focus {
+    background-color: 18rem;
+  }
+
+  .md\:focus\:bg-spacing-84:focus {
+    background-color: 21rem;
+  }
+
+  .md\:focus\:bg-spacing-96:focus {
+    background-color: 24rem;
+  }
+
   .md\:active\:bg-transparent:active {
     background-color: transparent;
   }
@@ -65126,6 +65858,18 @@ video {
 
   .md\:active\:bg-orchid:active {
     background-color: #8871A2;
+  }
+
+  .md\:active\:bg-spacing-72:active {
+    background-color: 18rem;
+  }
+
+  .md\:active\:bg-spacing-84:active {
+    background-color: 21rem;
+  }
+
+  .md\:active\:bg-spacing-96:active {
+    background-color: 24rem;
   }
 
   .md\:bg-bottom {
@@ -65740,6 +66484,18 @@ video {
     border-color: #8871A2;
   }
 
+  .md\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .md\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .md\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .group:hover .md\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -66270,6 +67026,18 @@ video {
 
   .group:hover .md\:group-hover\:border-orchid {
     border-color: #8871A2;
+  }
+
+  .group:hover .md\:group-hover\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:hover .md\:group-hover\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:hover .md\:group-hover\:border-spacing-96 {
+    border-color: 24rem;
   }
 
   .group:focus .md\:group-focus\:border-transparent {
@@ -66804,6 +67572,18 @@ video {
     border-color: #8871A2;
   }
 
+  .group:focus .md\:group-focus\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:focus .md\:group-focus\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:focus .md\:group-focus\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -67336,6 +68116,18 @@ video {
     border-color: #8871A2;
   }
 
+  .md\:hover\:border-spacing-72:hover {
+    border-color: 18rem;
+  }
+
+  .md\:hover\:border-spacing-84:hover {
+    border-color: 21rem;
+  }
+
+  .md\:hover\:border-spacing-96:hover {
+    border-color: 24rem;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -67866,6 +68658,18 @@ video {
 
   .md\:focus\:border-orchid:focus {
     border-color: #8871A2;
+  }
+
+  .md\:focus\:border-spacing-72:focus {
+    border-color: 18rem;
+  }
+
+  .md\:focus\:border-spacing-84:focus {
+    border-color: 21rem;
+  }
+
+  .md\:focus\:border-spacing-96:focus {
+    border-color: 24rem;
   }
 
   .md\:rounded-none {
@@ -77788,6 +78592,66 @@ video {
     color: #8871A2;
   }
 
+  .md\:placeholder-spacing-72::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:placeholder-spacing-72::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .md\:placeholder-spacing-72:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:placeholder-spacing-72::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:placeholder-spacing-72::placeholder {
+    color: 18rem;
+  }
+
+  .md\:placeholder-spacing-84::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:placeholder-spacing-84::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .md\:placeholder-spacing-84:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:placeholder-spacing-84::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:placeholder-spacing-84::placeholder {
+    color: 21rem;
+  }
+
+  .md\:placeholder-spacing-96::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:placeholder-spacing-96::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .md\:placeholder-spacing-96:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:placeholder-spacing-96::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:placeholder-spacing-96::placeholder {
+    color: 24rem;
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -80446,6 +81310,66 @@ video {
 
   .md\:focus\:placeholder-orchid:focus::placeholder {
     color: #8871A2;
+  }
+
+  .md\:focus\:placeholder-spacing-72:focus::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:focus\:placeholder-spacing-72:focus::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .md\:focus\:placeholder-spacing-72:focus:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:focus\:placeholder-spacing-72:focus::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .md\:focus\:placeholder-spacing-72:focus::placeholder {
+    color: 18rem;
+  }
+
+  .md\:focus\:placeholder-spacing-84:focus::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:focus\:placeholder-spacing-84:focus::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .md\:focus\:placeholder-spacing-84:focus:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:focus\:placeholder-spacing-84:focus::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .md\:focus\:placeholder-spacing-84:focus::placeholder {
+    color: 21rem;
+  }
+
+  .md\:focus\:placeholder-spacing-96:focus::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:focus\:placeholder-spacing-96:focus::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .md\:focus\:placeholder-spacing-96:focus:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:focus\:placeholder-spacing-96:focus::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .md\:focus\:placeholder-spacing-96:focus::placeholder {
+    color: 24rem;
   }
 
   .md\:pointer-events-none {
@@ -83400,6 +84324,18 @@ video {
     color: #8871A2;
   }
 
+  .md\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .md\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .md\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .group:hover .md\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -83930,6 +84866,18 @@ video {
 
   .group:hover .md\:group-hover\:text-orchid {
     color: #8871A2;
+  }
+
+  .group:hover .md\:group-hover\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:hover .md\:group-hover\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:hover .md\:group-hover\:text-spacing-96 {
+    color: 24rem;
   }
 
   .group:focus .md\:group-focus\:text-transparent {
@@ -84464,6 +85412,18 @@ video {
     color: #8871A2;
   }
 
+  .group:focus .md\:group-focus\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:focus .md\:group-focus\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:focus .md\:group-focus\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -84994,6 +85954,18 @@ video {
 
   .md\:hover\:text-orchid:hover {
     color: #8871A2;
+  }
+
+  .md\:hover\:text-spacing-72:hover {
+    color: 18rem;
+  }
+
+  .md\:hover\:text-spacing-84:hover {
+    color: 21rem;
+  }
+
+  .md\:hover\:text-spacing-96:hover {
+    color: 24rem;
   }
 
   .md\:focus-within\:text-transparent:focus-within {
@@ -85528,6 +86500,18 @@ video {
     color: #8871A2;
   }
 
+  .md\:focus-within\:text-spacing-72:focus-within {
+    color: 18rem;
+  }
+
+  .md\:focus-within\:text-spacing-84:focus-within {
+    color: 21rem;
+  }
+
+  .md\:focus-within\:text-spacing-96:focus-within {
+    color: 24rem;
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -86060,6 +87044,18 @@ video {
     color: #8871A2;
   }
 
+  .md\:focus\:text-spacing-72:focus {
+    color: 18rem;
+  }
+
+  .md\:focus\:text-spacing-84:focus {
+    color: 21rem;
+  }
+
+  .md\:focus\:text-spacing-96:focus {
+    color: 24rem;
+  }
+
   .md\:active\:text-transparent:active {
     color: transparent;
   }
@@ -86590,6 +87586,18 @@ video {
 
   .md\:active\:text-orchid:active {
     color: #8871A2;
+  }
+
+  .md\:active\:text-spacing-72:active {
+    color: 18rem;
+  }
+
+  .md\:active\:text-spacing-84:active {
+    color: 21rem;
+  }
+
+  .md\:active\:text-spacing-96:active {
+    color: 24rem;
   }
 
   .md\:text-xs {
@@ -92852,6 +93860,18 @@ video {
     background-color: #8871A2;
   }
 
+  .lg\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .lg\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .lg\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .group:hover .lg\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -93382,6 +94402,18 @@ video {
 
   .group:hover .lg\:group-hover\:bg-orchid {
     background-color: #8871A2;
+  }
+
+  .group:hover .lg\:group-hover\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:hover .lg\:group-hover\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:hover .lg\:group-hover\:bg-spacing-96 {
+    background-color: 24rem;
   }
 
   .group:focus .lg\:group-focus\:bg-transparent {
@@ -93916,6 +94948,18 @@ video {
     background-color: #8871A2;
   }
 
+  .group:focus .lg\:group-focus\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:focus .lg\:group-focus\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:focus .lg\:group-focus\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -94446,6 +95490,18 @@ video {
 
   .lg\:hover\:bg-orchid:hover {
     background-color: #8871A2;
+  }
+
+  .lg\:hover\:bg-spacing-72:hover {
+    background-color: 18rem;
+  }
+
+  .lg\:hover\:bg-spacing-84:hover {
+    background-color: 21rem;
+  }
+
+  .lg\:hover\:bg-spacing-96:hover {
+    background-color: 24rem;
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -94980,6 +96036,18 @@ video {
     background-color: #8871A2;
   }
 
+  .lg\:focus\:bg-spacing-72:focus {
+    background-color: 18rem;
+  }
+
+  .lg\:focus\:bg-spacing-84:focus {
+    background-color: 21rem;
+  }
+
+  .lg\:focus\:bg-spacing-96:focus {
+    background-color: 24rem;
+  }
+
   .lg\:active\:bg-transparent:active {
     background-color: transparent;
   }
@@ -95510,6 +96578,18 @@ video {
 
   .lg\:active\:bg-orchid:active {
     background-color: #8871A2;
+  }
+
+  .lg\:active\:bg-spacing-72:active {
+    background-color: 18rem;
+  }
+
+  .lg\:active\:bg-spacing-84:active {
+    background-color: 21rem;
+  }
+
+  .lg\:active\:bg-spacing-96:active {
+    background-color: 24rem;
   }
 
   .lg\:bg-bottom {
@@ -96124,6 +97204,18 @@ video {
     border-color: #8871A2;
   }
 
+  .lg\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .lg\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .lg\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .group:hover .lg\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -96654,6 +97746,18 @@ video {
 
   .group:hover .lg\:group-hover\:border-orchid {
     border-color: #8871A2;
+  }
+
+  .group:hover .lg\:group-hover\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:hover .lg\:group-hover\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:hover .lg\:group-hover\:border-spacing-96 {
+    border-color: 24rem;
   }
 
   .group:focus .lg\:group-focus\:border-transparent {
@@ -97188,6 +98292,18 @@ video {
     border-color: #8871A2;
   }
 
+  .group:focus .lg\:group-focus\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:focus .lg\:group-focus\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:focus .lg\:group-focus\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -97720,6 +98836,18 @@ video {
     border-color: #8871A2;
   }
 
+  .lg\:hover\:border-spacing-72:hover {
+    border-color: 18rem;
+  }
+
+  .lg\:hover\:border-spacing-84:hover {
+    border-color: 21rem;
+  }
+
+  .lg\:hover\:border-spacing-96:hover {
+    border-color: 24rem;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -98250,6 +99378,18 @@ video {
 
   .lg\:focus\:border-orchid:focus {
     border-color: #8871A2;
+  }
+
+  .lg\:focus\:border-spacing-72:focus {
+    border-color: 18rem;
+  }
+
+  .lg\:focus\:border-spacing-84:focus {
+    border-color: 21rem;
+  }
+
+  .lg\:focus\:border-spacing-96:focus {
+    border-color: 24rem;
   }
 
   .lg\:rounded-none {
@@ -108172,6 +109312,66 @@ video {
     color: #8871A2;
   }
 
+  .lg\:placeholder-spacing-72::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:placeholder-spacing-72::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:placeholder-spacing-72:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:placeholder-spacing-72::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:placeholder-spacing-72::placeholder {
+    color: 18rem;
+  }
+
+  .lg\:placeholder-spacing-84::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:placeholder-spacing-84::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:placeholder-spacing-84:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:placeholder-spacing-84::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:placeholder-spacing-84::placeholder {
+    color: 21rem;
+  }
+
+  .lg\:placeholder-spacing-96::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:placeholder-spacing-96::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:placeholder-spacing-96:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:placeholder-spacing-96::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:placeholder-spacing-96::placeholder {
+    color: 24rem;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -110830,6 +112030,66 @@ video {
 
   .lg\:focus\:placeholder-orchid:focus::placeholder {
     color: #8871A2;
+  }
+
+  .lg\:focus\:placeholder-spacing-72:focus::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-72:focus::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-72:focus:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-72:focus::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-72:focus::placeholder {
+    color: 18rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-84:focus::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-84:focus::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-84:focus:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-84:focus::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-84:focus::placeholder {
+    color: 21rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-96:focus::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-96:focus::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-96:focus:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-96:focus::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .lg\:focus\:placeholder-spacing-96:focus::placeholder {
+    color: 24rem;
   }
 
   .lg\:pointer-events-none {
@@ -113784,6 +115044,18 @@ video {
     color: #8871A2;
   }
 
+  .lg\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .lg\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .lg\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .group:hover .lg\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -114314,6 +115586,18 @@ video {
 
   .group:hover .lg\:group-hover\:text-orchid {
     color: #8871A2;
+  }
+
+  .group:hover .lg\:group-hover\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-spacing-96 {
+    color: 24rem;
   }
 
   .group:focus .lg\:group-focus\:text-transparent {
@@ -114848,6 +116132,18 @@ video {
     color: #8871A2;
   }
 
+  .group:focus .lg\:group-focus\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:focus .lg\:group-focus\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:focus .lg\:group-focus\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -115378,6 +116674,18 @@ video {
 
   .lg\:hover\:text-orchid:hover {
     color: #8871A2;
+  }
+
+  .lg\:hover\:text-spacing-72:hover {
+    color: 18rem;
+  }
+
+  .lg\:hover\:text-spacing-84:hover {
+    color: 21rem;
+  }
+
+  .lg\:hover\:text-spacing-96:hover {
+    color: 24rem;
   }
 
   .lg\:focus-within\:text-transparent:focus-within {
@@ -115912,6 +117220,18 @@ video {
     color: #8871A2;
   }
 
+  .lg\:focus-within\:text-spacing-72:focus-within {
+    color: 18rem;
+  }
+
+  .lg\:focus-within\:text-spacing-84:focus-within {
+    color: 21rem;
+  }
+
+  .lg\:focus-within\:text-spacing-96:focus-within {
+    color: 24rem;
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -116444,6 +117764,18 @@ video {
     color: #8871A2;
   }
 
+  .lg\:focus\:text-spacing-72:focus {
+    color: 18rem;
+  }
+
+  .lg\:focus\:text-spacing-84:focus {
+    color: 21rem;
+  }
+
+  .lg\:focus\:text-spacing-96:focus {
+    color: 24rem;
+  }
+
   .lg\:active\:text-transparent:active {
     color: transparent;
   }
@@ -116974,6 +118306,18 @@ video {
 
   .lg\:active\:text-orchid:active {
     color: #8871A2;
+  }
+
+  .lg\:active\:text-spacing-72:active {
+    color: 18rem;
+  }
+
+  .lg\:active\:text-spacing-84:active {
+    color: 21rem;
+  }
+
+  .lg\:active\:text-spacing-96:active {
+    color: 24rem;
   }
 
   .lg\:text-xs {
@@ -123236,6 +124580,18 @@ video {
     background-color: #8871A2;
   }
 
+  .xl\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .xl\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .xl\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .group:hover .xl\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -123766,6 +125122,18 @@ video {
 
   .group:hover .xl\:group-hover\:bg-orchid {
     background-color: #8871A2;
+  }
+
+  .group:hover .xl\:group-hover\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:hover .xl\:group-hover\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:hover .xl\:group-hover\:bg-spacing-96 {
+    background-color: 24rem;
   }
 
   .group:focus .xl\:group-focus\:bg-transparent {
@@ -124300,6 +125668,18 @@ video {
     background-color: #8871A2;
   }
 
+  .group:focus .xl\:group-focus\:bg-spacing-72 {
+    background-color: 18rem;
+  }
+
+  .group:focus .xl\:group-focus\:bg-spacing-84 {
+    background-color: 21rem;
+  }
+
+  .group:focus .xl\:group-focus\:bg-spacing-96 {
+    background-color: 24rem;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -124830,6 +126210,18 @@ video {
 
   .xl\:hover\:bg-orchid:hover {
     background-color: #8871A2;
+  }
+
+  .xl\:hover\:bg-spacing-72:hover {
+    background-color: 18rem;
+  }
+
+  .xl\:hover\:bg-spacing-84:hover {
+    background-color: 21rem;
+  }
+
+  .xl\:hover\:bg-spacing-96:hover {
+    background-color: 24rem;
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -125364,6 +126756,18 @@ video {
     background-color: #8871A2;
   }
 
+  .xl\:focus\:bg-spacing-72:focus {
+    background-color: 18rem;
+  }
+
+  .xl\:focus\:bg-spacing-84:focus {
+    background-color: 21rem;
+  }
+
+  .xl\:focus\:bg-spacing-96:focus {
+    background-color: 24rem;
+  }
+
   .xl\:active\:bg-transparent:active {
     background-color: transparent;
   }
@@ -125894,6 +127298,18 @@ video {
 
   .xl\:active\:bg-orchid:active {
     background-color: #8871A2;
+  }
+
+  .xl\:active\:bg-spacing-72:active {
+    background-color: 18rem;
+  }
+
+  .xl\:active\:bg-spacing-84:active {
+    background-color: 21rem;
+  }
+
+  .xl\:active\:bg-spacing-96:active {
+    background-color: 24rem;
   }
 
   .xl\:bg-bottom {
@@ -126508,6 +127924,18 @@ video {
     border-color: #8871A2;
   }
 
+  .xl\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .xl\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .xl\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .group:hover .xl\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -127038,6 +128466,18 @@ video {
 
   .group:hover .xl\:group-hover\:border-orchid {
     border-color: #8871A2;
+  }
+
+  .group:hover .xl\:group-hover\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:hover .xl\:group-hover\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:hover .xl\:group-hover\:border-spacing-96 {
+    border-color: 24rem;
   }
 
   .group:focus .xl\:group-focus\:border-transparent {
@@ -127572,6 +129012,18 @@ video {
     border-color: #8871A2;
   }
 
+  .group:focus .xl\:group-focus\:border-spacing-72 {
+    border-color: 18rem;
+  }
+
+  .group:focus .xl\:group-focus\:border-spacing-84 {
+    border-color: 21rem;
+  }
+
+  .group:focus .xl\:group-focus\:border-spacing-96 {
+    border-color: 24rem;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -128104,6 +129556,18 @@ video {
     border-color: #8871A2;
   }
 
+  .xl\:hover\:border-spacing-72:hover {
+    border-color: 18rem;
+  }
+
+  .xl\:hover\:border-spacing-84:hover {
+    border-color: 21rem;
+  }
+
+  .xl\:hover\:border-spacing-96:hover {
+    border-color: 24rem;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -128634,6 +130098,18 @@ video {
 
   .xl\:focus\:border-orchid:focus {
     border-color: #8871A2;
+  }
+
+  .xl\:focus\:border-spacing-72:focus {
+    border-color: 18rem;
+  }
+
+  .xl\:focus\:border-spacing-84:focus {
+    border-color: 21rem;
+  }
+
+  .xl\:focus\:border-spacing-96:focus {
+    border-color: 24rem;
   }
 
   .xl\:rounded-none {
@@ -138556,6 +140032,66 @@ video {
     color: #8871A2;
   }
 
+  .xl\:placeholder-spacing-72::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:placeholder-spacing-72::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:placeholder-spacing-72:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:placeholder-spacing-72::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:placeholder-spacing-72::placeholder {
+    color: 18rem;
+  }
+
+  .xl\:placeholder-spacing-84::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:placeholder-spacing-84::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:placeholder-spacing-84:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:placeholder-spacing-84::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:placeholder-spacing-84::placeholder {
+    color: 21rem;
+  }
+
+  .xl\:placeholder-spacing-96::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:placeholder-spacing-96::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:placeholder-spacing-96:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:placeholder-spacing-96::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:placeholder-spacing-96::placeholder {
+    color: 24rem;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -141214,6 +142750,66 @@ video {
 
   .xl\:focus\:placeholder-orchid:focus::placeholder {
     color: #8871A2;
+  }
+
+  .xl\:focus\:placeholder-spacing-72:focus::-webkit-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-72:focus::-moz-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-72:focus:-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-72:focus::-ms-input-placeholder {
+    color: 18rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-72:focus::placeholder {
+    color: 18rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-84:focus::-webkit-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-84:focus::-moz-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-84:focus:-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-84:focus::-ms-input-placeholder {
+    color: 21rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-84:focus::placeholder {
+    color: 21rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-96:focus::-webkit-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-96:focus::-moz-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-96:focus:-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-96:focus::-ms-input-placeholder {
+    color: 24rem;
+  }
+
+  .xl\:focus\:placeholder-spacing-96:focus::placeholder {
+    color: 24rem;
   }
 
   .xl\:pointer-events-none {
@@ -144168,6 +145764,18 @@ video {
     color: #8871A2;
   }
 
+  .xl\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .xl\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .xl\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .group:hover .xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -144698,6 +146306,18 @@ video {
 
   .group:hover .xl\:group-hover\:text-orchid {
     color: #8871A2;
+  }
+
+  .group:hover .xl\:group-hover\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-spacing-96 {
+    color: 24rem;
   }
 
   .group:focus .xl\:group-focus\:text-transparent {
@@ -145232,6 +146852,18 @@ video {
     color: #8871A2;
   }
 
+  .group:focus .xl\:group-focus\:text-spacing-72 {
+    color: 18rem;
+  }
+
+  .group:focus .xl\:group-focus\:text-spacing-84 {
+    color: 21rem;
+  }
+
+  .group:focus .xl\:group-focus\:text-spacing-96 {
+    color: 24rem;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -145762,6 +147394,18 @@ video {
 
   .xl\:hover\:text-orchid:hover {
     color: #8871A2;
+  }
+
+  .xl\:hover\:text-spacing-72:hover {
+    color: 18rem;
+  }
+
+  .xl\:hover\:text-spacing-84:hover {
+    color: 21rem;
+  }
+
+  .xl\:hover\:text-spacing-96:hover {
+    color: 24rem;
   }
 
   .xl\:focus-within\:text-transparent:focus-within {
@@ -146296,6 +147940,18 @@ video {
     color: #8871A2;
   }
 
+  .xl\:focus-within\:text-spacing-72:focus-within {
+    color: 18rem;
+  }
+
+  .xl\:focus-within\:text-spacing-84:focus-within {
+    color: 21rem;
+  }
+
+  .xl\:focus-within\:text-spacing-96:focus-within {
+    color: 24rem;
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -146828,6 +148484,18 @@ video {
     color: #8871A2;
   }
 
+  .xl\:focus\:text-spacing-72:focus {
+    color: 18rem;
+  }
+
+  .xl\:focus\:text-spacing-84:focus {
+    color: 21rem;
+  }
+
+  .xl\:focus\:text-spacing-96:focus {
+    color: 24rem;
+  }
+
   .xl\:active\:text-transparent:active {
     color: transparent;
   }
@@ -147358,6 +149026,18 @@ video {
 
   .xl\:active\:text-orchid:active {
     color: #8871A2;
+  }
+
+  .xl\:active\:text-spacing-72:active {
+    color: 18rem;
+  }
+
+  .xl\:active\:text-spacing-84:active {
+    color: 21rem;
+  }
+
+  .xl\:active\:text-spacing-96:active {
+    color: 24rem;
   }
 
   .xl\:text-xs {

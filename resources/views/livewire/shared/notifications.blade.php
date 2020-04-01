@@ -14,10 +14,13 @@
       </span>
     </div>
     @if($notifications->count() > 0)
-        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg">
-        <div class="rounded-md bg-white shadow-xs">
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-72 rounded-md shadow-lg">
+        <div class="shadow-xs">
+            <div class="bg-gray-50 border-b border-gray-100 rounded-b-none rounded-md text-right text-xs px-2 py-3">
+                <button wire:click="markAllAsRead" class="link cursor-pointer">Mark As Read</button>
+            </div>
             @foreach($notifications as $notify)
-                <div class="px-2 py-2">
+                <div class="px-2 py-2 bg-white">
                     @if($notify->type === 'App\Notifications\NotifySubscribers')
                         <span class="text-xs leading-5 font-medium text-gray-900">
                             {{ $notify->data['comment_by']}}
@@ -35,7 +38,7 @@
 
             <div class="border-t border-gray-100"></div>
             <div class="p-0">
-                <a href="#" class="block px-4 py-2 text-xs uppercase leading-5 text-green-400 bg-green-50 hover:bg-green-100 hover:text-green-500 focus:outline-none text-center">View All</a>
+                <a href="#" class="block px-4 py-2 text-xs uppercase leading-5 text-blue-400 bg-blue-50 hover:bg-blue-100 hover:text-blue-500 focus:outline-none text-center">View All</a>
             </div>
             <div class="border-t border-gray-100"></div>
         </div>
