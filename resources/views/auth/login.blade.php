@@ -96,9 +96,9 @@
                     <div>
                         <div class="btn-wrapper text-center">
                             <button
-                                class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs"
-                                type="button" style="transition: all 0.15s ease 0s;"><img alt="..." class="w-5 mr-1"
-                                    src="https://demos.creative-tim.com/tailwindcss-starter-project/static/media/google.87be59a1.svg">Google</button>
+                                class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-lg"
+                                type="button" style="transition: all 0.15s ease 0s;"><img alt="..." class="w-8 mr-1"
+                                    src="/svgs/google-wordmark.svg">Google</button>
                         </div>
                     </div>
                 </div>
