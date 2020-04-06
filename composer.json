@@ -21,6 +21,7 @@
         "rackbeat/laravel-ui-avatars": "^0.8.5"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
         "beyondcode/tinkerwell-helper": "^1.1",
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",

@@ -50,4 +50,12 @@ class User extends Authenticatable
     {
         return ($this->staff);
     }
+
+    public function lastRead($messageId)
+    {
+        return MessageState::where([
+            ['message_id', '=', $messageId],
+            ['user_id', '=', auth()->user()->id]
+        ])->first();
+    }
 }

@@ -16,6 +16,14 @@ AlpineJS
 https://github.com/alpinejs/alpine
 
 
+Eloquent / Queries: https://laracon.net/videos - https://github.com/reinink/wants
+14:00 - Better counts for dashboard
+16:00 - Even better query (Calculate Totals with Conditional Aggregates)
+
+
+
+
+
 Notifications:
 There is a brief explanation in this doc that explains it.
 https://joedixon.co.uk/adding-notifications-to-laravelio
@@ -38,3 +46,6 @@ A Team can:
 
 @Mentions
 https://laracasts.com/series/lets-build-a-forum-with-laravel/episodes/56
+
+
+

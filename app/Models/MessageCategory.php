@@ -12,4 +12,9 @@ class MessageCategory extends Model
     {
         return $this->belongsTo(Team::class, 'team_id');
     }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
 }

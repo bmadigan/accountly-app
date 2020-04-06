@@ -9,8 +9,10 @@ class MessagesController extends Controller
 {
     public function index()
     {
+        $messages = auth()->user()->currentTeam->messages;
+
         return view('messages.index', [
-            'messages' => auth()->user()->currentTeam->messages
+            'messages' => $messages
         ]);
     }
 
@@ -21,8 +23,9 @@ class MessagesController extends Controller
 
     public function show(Request $request)
     {
-        return view('messages.show', [
-            'message' => Message::firstWhere('uuid', $request->uuid)
-        ]);
+        $message = Message::firstWhere('uuid', $request->uuid);
+        $message->markAsRead();
+
+        return view('messages.show', ['message' => $message]);
     }
 }

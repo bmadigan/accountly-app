@@ -23,6 +23,7 @@ class CreateMessagesTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->boolean('is_archived')->default(false);
+            $table->timestamp('last_updated');
             $table->timestamps();
         });
     }

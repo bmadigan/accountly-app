@@ -11,5 +11,6 @@ $factory->define(Message::class, function (Faker $faker) {
         'team_id' => 1,
         'title' => $faker->sentence(),
         'body' => $faker->paragraph(),
+        'last_updated' => $faker->dateTimeBetween('-5 days', '-1 day'),
     ];
 });
