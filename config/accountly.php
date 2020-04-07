@@ -9,4 +9,7 @@ return [
 
     // Default Timezone
     'default_timezone' => 'America/Toronto',
+
+    // Money
+    'currency_code' => 'CAD', // USD
 ];
