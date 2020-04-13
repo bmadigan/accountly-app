@@ -61,7 +61,7 @@
                         <div>
                             <button @click="open = !open"
                                 class="flex text-sm rounded-full text-white focus:outline-none focus:shadow-solid transition duration-150 ease-in-out">
-                                <img class="h-8 w-8 rounded-full" src="{{ auth()->user()->photo_url }}" />
+                                <img class="h-8 w-8 rounded-full border border-white" src="{{ auth()->user()->photo_url }}" />
                             </button>
                         </div>
                         <div x-show="open" x-transition:enter="transition ease-out duration-100"

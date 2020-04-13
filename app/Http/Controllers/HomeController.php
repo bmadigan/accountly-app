@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Traits\Currency;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,34 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //dd(auth()->user()->currentTeam());
-        return view('home');
+        $year = 2020;
+        $revenue = 10000;
+        $expenses = 9400;
+        $profit = $this->calculateProfit($revenue, $expenses);
+
+        return view('home', [
+            'year' => $year,
+            'revenue' => $revenue,
+            'expenses' => $expenses,
+            'profit' => $profit,
+        ]);
+    }
+
+    public function calculateProfit($r, $e)
+    {
+        if ($this->isProfit($r, $e)) {
+            return Currency::subtract($r, $e);
+        }
+        return '-' . Currency::subtract($e, $r);
+    }
+
+
+    private function isProfit($r, $e)
+    {
+        if ($r > $e) {
+            return true;
+        }
+
+        return false;
     }
 }
