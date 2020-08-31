@@ -20,17 +20,12 @@ trait CanJoinTeams
             'team_users',
             'user_id',
             'team_id'
-        );//->withPivot(['role'])->orderBy('name', 'asc');
+        );
     }
 
-    // public function invitations()
-    // {
-    //     return $this->hasMany(Invitation::class);
-    // }
-
-    public function onTeam($team)
+    public function onTeam($teamId)
     {
-        return $this->teams->contains($team);
+        return $this->teams->contains('id', $teamId);
     }
 
     public function ownsTeam($team)
@@ -42,18 +37,6 @@ trait CanJoinTeams
     {
         return $this->hasMany(Team::class, 'owner_id');
     }
-
-    // public function roleOn($team)
-    // {
-    //     if ($team = $this->teams->find($team->id)) {
-    //         return $team->pivot->role;
-    //     }
-    // }
-
-    // public function roleOnCurrentTeam()
-    // {
-    //     return $this->roleOn($this->currentTeam);
-    // }
 
     public function getCurrentTeamAttribute()
     {
@@ -73,23 +56,18 @@ trait CanJoinTeams
         }
     }
 
-    // public function currentTeamOnTrial()
-    // {
-    //     return $this->currentTeam() && $this->currentTeam()->onTrial();
-    // }
-
     public function ownsCurrentTeam()
     {
         return $this->currentTeam() && $this->currentTeam()->owner_id === $this->id;
     }
 
-    public function switchToTeam($team)
+    public function switchToTeam($teamId)
     {
-        if (! $this->onTeam($team)) {
+        if (! $this->onTeam($teamId)) {
             throw new InvalidArgumentException('User is not part of this team');
         }
 
-        $this->current_team_id = $team->id;
+        $this->current_team_id = $teamId;
 
         $this->save();
     }
