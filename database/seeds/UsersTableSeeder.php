@@ -33,19 +33,29 @@ class UsersTableSeeder extends Seeder
         ]);
         $myTeam->users()->attach($karen);
 
-        // May as well create one more
-        $cam = factory(User::class)->create([
-            'name' => 'Cam Madigan',
-            'email' => 'cam@madigan.com',
-            'current_team_id' => $myTeam->id,
-        ]);
-        $myTeam->users()->attach($cam);
-
-        // I also need a Staff member account
-        $me = factory(User::class)->create([
+        $staff = factory(User::class)->create([
             'name' => 'Brad Wessa',
             'email' => 'brad@wessa.com',
             'staff' => true,
         ]);
+        $myTeam->users()->attach($staff);
+
+        // Create one more for Aryeo
+        $aryeoTeam = factory(Team::class)->create(['name' => 'Aryeo']);
+
+        $aryeoUser = factory(User::class)->create([
+            'name' => 'Branick Weix',
+            'email' => 'aryeo-team@aryeo.com',
+            'current_team_id' => $aryeoTeam->id,
+        ]);
+        $aryeoTeam->users()->attach($aryeoUser);
+
+        $aryeoStaff = factory(User::class)->create([
+            'name' => 'The Ninja Guy',
+            'email' => 'aryeo-staff@aryeo.com',
+            'current_team_id' => $aryeoTeam->id,
+        ]);
+        $aryeoTeam->users()->attach($aryeoStaff);
+
     }
 }

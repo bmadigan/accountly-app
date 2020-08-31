@@ -16,9 +16,9 @@ class Message extends Model
     {
         parent::boot();
 
-        static::created(function ($message) {
+/*        static::created(function ($message) {
             $message->markAsRead();
-        });
+        });*/
 
         static::deleting(function ($message) {
             $message->comments->each->delete();
