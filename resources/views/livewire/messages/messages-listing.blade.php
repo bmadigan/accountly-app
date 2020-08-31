@@ -1,5 +1,5 @@
 <ul>
-    @foreach($messages as $message)
+    @forelse($messages as $message)
     <li>
         <a href="{{ route('messages.show', $message->uuid) }}" class="
                     @if (!$message->first)
@@ -56,5 +56,17 @@
             </div>
         </a>
     </li>
-    @endforeach
+    @empty
+        <li class="border-t border-gray-200 py-3 px-4 text-center">
+            <h2 class="mt-8 text-2xl text-cool-gray-600 font-bold">
+                You do not have any messages for this team!
+            </h2>
+            <div class="w-full mt-8 p-12 bg-cool-gray-50 rounded-lg">
+                <a href="{{ route('messages.create') }}" class="btn btn-primary -mt-2 mr-1">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-4 mr-1"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+                    Create Your First Message!
+                </a>
+            </div>
+        </li>
+    @endforelse
 </ul>

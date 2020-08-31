@@ -51,11 +51,15 @@
             </div>
 
             <div class="card" x-show="currentTab === 'read'">
-                <h4>Im the read messages</h4>
+                <div class="border-t border-gray-200 py-12 text-center">
+                    This tab has not yet been implemented.
+                </div>
             </div>
 
             <div class="card" x-show="currentTab === 'archived'">
-                <h4>Im the archvied messages</h4>
+                <div class="border-t border-gray-200 py-12 text-center">
+                    This tab has not yet been implemented.
+                </div>
             </div>
         </div>
 
