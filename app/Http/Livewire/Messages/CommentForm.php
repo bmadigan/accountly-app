@@ -2,8 +2,8 @@
 
 namespace App\Http\Livewire\Messages;
 
-use App\Models\Comment;
 use Livewire\Component;
+use App\Actions\CreateCommentAction;
 use App\Notifications\NotifySubscribers;
 
 class CommentForm extends Component
@@ -22,7 +22,7 @@ class CommentForm extends Component
             'body' => 'required|min:3',
         ]);
 
-        $comment = $this->createComment();
+        $comment = $this->createComment(request()->all());
 
         $this->notifySubscribers($comment);
 
@@ -31,18 +31,9 @@ class CommentForm extends Component
         return redirect()->to(route('messages.show', $this->message->uuid));
     }
 
-    public function render()
+    protected function createComment($request)
     {
-        return view('livewire.messages.comment-form');
-    }
-
-    protected function createComment()
-    {
-        return Comment::create([
-            'body' => $this->body,
-            'message_id' => $this->message->id,
-            'owner_id' => auth()->user()->id,
-        ]);
+        return (new CreateCommentAction())->execute($request['data']);
     }
 
     protected function notifySubscribers($comment)
@@ -53,5 +44,10 @@ class CommentForm extends Component
                 $sub->user->notify(new NotifySubscribers($this->message, $comment));
             }
         }
+    }
+
+    public function render()
+    {
+        return view('livewire.messages.comment-form');
     }
 }
