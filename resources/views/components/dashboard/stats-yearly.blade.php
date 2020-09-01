@@ -12,7 +12,7 @@
             Profile / Loss for {{ $year }}
         </h3>
         <div>
-            Year Dropdown
+            <x-dashboard.dates-dropdown />
         </div>
     </div>
     <div class="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow md:grid-cols-3">
