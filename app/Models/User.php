@@ -43,6 +43,7 @@ class User extends Authenticatable
     public function getPhotoUrlAttribute()
     {
         return 'https://i.pravatar.cc/150?u=' . $this->email;
+
         //return $this->getUrlfriendlyAvatar();
         //return empty($value) ? 'https://www.gravatar.com/avatar/' . md5(Str::lower($this->email)) . '.jpg?s=200&d=mm' : url($value);
     }
