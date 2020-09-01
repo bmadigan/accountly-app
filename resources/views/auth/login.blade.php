@@ -1,8 +1,7 @@
-@extends('layouts.auth')
+<x-layouts.auth>
 
-@section('page_title') Sign in to your account @endsection
+    @section('page_title') Sign in to your account @endsection
 
-@section('content')
 
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <img class="mx-auto h-20 w-auto" src="/svgs/workmark.svg" alt="Workflow"/>
@@ -85,7 +84,7 @@
                                 <button
                                     class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-lg"
                                     type="button" style="transition: all 0.15s ease 0s;">
-                                    <img alt="Google Icon" class="w-8 mr-1"  src="/svgs/google-wordmark.svg">
+                                    <img alt="Google Icon" class="w-8 mr-1" src="/svgs/google-wordmark.svg">
                                     Google
                                 </button>
                                 <div class="mt-2 text-sm text-gray-400">
@@ -99,4 +98,4 @@
         </form>
     </div>
 
-@endsection
+</x-layouts.auth>
