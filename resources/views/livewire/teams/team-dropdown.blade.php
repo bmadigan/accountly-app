@@ -39,7 +39,8 @@
                             wire:click="switchTeam('{{ $team->id }}')"
                             class="flex items-center cursor-pointer block px-4 py-2 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
                             <span class="mr-2 text-gray-400">
-                                <svg viewBox="0 0 20 20" fill="currentColor" class="user-group w-6 h-6"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="user-group w-6 h-6"><path
+                                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
                             </span>
                             <a class="text-sm leading-5 text-gray-700">{{ $team->name }}</a>
                         </div>
@@ -48,10 +49,34 @@
             </div>
             <div class="border-t border-gray-100"></div>
             <div class="py-1">
-                <a href="#"
-                   class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">Add
-                                                                                                                                                                          New
-                                                                                                                                                                          Team</a>
+                <x-ui.modal>
+                    <x-slot name="trigger">
+                        <a href="#"
+                           @click="openModal = true"
+                           class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                            Add NewTeam
+                        </a>
+                    </x-slot>
+
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                            Yo Wha Dup!
+                        </h3>
+                        <div class="mt-2 max-w-xl text-sm leading-5 text-gray-500">
+                            <p>
+                                This functionality does not exist. It's just here for show.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <button
+                                @click="openModal = false"
+                                type="button" class="inline-flex items-center justify-center px-4 py-2 border border-transparent font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-red active:bg-red-200 transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                                Close Modal
+                            </button>
+                        </div>
+                    </div>
+
+                </x-ui.modal>
             </div>
         </div>
     </div>
