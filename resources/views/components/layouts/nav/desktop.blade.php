@@ -3,7 +3,7 @@
         <div class="flex items-center px-2 lg:px-0">
             <div class="flex-shrink-0">
                 <img class="block lg:hidden h-8 w-auto" src="/svgs/logo-full-white.svg" alt=""/>
-                <img class="hidden lg:block h-8 w-auto" src="/svgs/logo-full-white.svg" alt=""/>
+                <a href="{{ route('home') }}"><img class="hidden lg:block h-8 w-auto" src="/svgs/logo-full-white.svg" alt=""/></a>
             </div>
             <div class="hidden lg:block lg:ml-6">
                 <div class="flex">
