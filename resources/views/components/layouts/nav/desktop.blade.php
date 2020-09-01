@@ -13,10 +13,12 @@
                     <a href="{{ route('messages.index') }}"
                        class="{{ (request()->is('messages*')) ? 'bg-slate-800' : '' }}
                            ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-slate-100 hover:text-slate-100 hover:bg-slate-600 focus:outline-none focus:text-slate-100 focus:bg-slate-600 transition duration-150 ease-in-out">Messages</a>
-                    <a href="#"
-                       class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-slate-100 hover:text-slate-100 hover:bg-slate-600 focus:outline-none focus:text-slate-100 focus:bg-slate-600 transition duration-150 ease-in-out">Documents</a>
-                    <a href="#"
-                       class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-slate-100 hover:text-slate-100 hover:bg-slate-600 focus:outline-none focus:text-slate-100 focus:bg-slate-600 transition duration-150 ease-in-out">Integrations</a>
+                    <a href="{{ route('documents.index') }}"
+                       class="{{ (request()->is('documents*')) ? 'bg-slate-800' : '' }}
+                           ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-slate-100 hover:text-slate-100 hover:bg-slate-600 focus:outline-none focus:text-slate-100 focus:bg-slate-600 transition duration-150 ease-in-out">Documents</a>
+                    <a href="{{ route('integrations.index') }}"
+                       class="{{ (request()->is('intagrations*')) ? 'bg-slate-800' : '' }}
+                           ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-slate-100 hover:text-slate-100 hover:bg-slate-600 focus:outline-none focus:text-slate-100 focus:bg-slate-600 transition duration-150 ease-in-out">Integrations</a>
                 </div>
             </div>
         </div>
