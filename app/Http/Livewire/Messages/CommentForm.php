@@ -6,8 +6,8 @@ use Livewire\Component;
 use App\Actions\CreateCommentAction;
 use App\Notifications\NotifySubscribers;
 
-class CommentForm extends Component
-{
+class CommentForm extends Component {
+
     public $body;
     public $message;
 
