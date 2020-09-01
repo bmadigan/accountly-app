@@ -17,13 +17,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/img/site.webmanifest">
-    <meta name="msapplication-config" content="/img/browserconfig.xml" />
+    <meta name="msapplication-config" content="/img/browserconfig.xml"/>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="/imgs//fonts.gstatic.com">
@@ -31,22 +30,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
-    @livewireStyles
 </head>
 
-<body class="bg-gray-100">
-    <div class="min-h-screen flex flex-col">
-        <div class="flex-grow">
-            @include('shared.nav')
-            @yield('content')
-        </div>
+<body>
 
-        @include('shared.footer')
-        <x-ui.flash />
-    </div>
-    @livewireScripts
+<div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    {{ $slot }}
+</div>
+
 </body>
 
 </html>

@@ -2,8 +2,8 @@
     <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
             <div class="flex-shrink-0">
-                <img class="block lg:hidden h-8 w-auto" src="/svgs/logo-full-white.svg" alt="" />
-                <img class="hidden lg:block h-8 w-auto" src="/svgs/logo-full-white.svg" alt="" />
+                <img class="block lg:hidden h-8 w-auto" src="/svgs/logo-full-white.svg" alt=""/>
+                <img class="hidden lg:block h-8 w-auto" src="/svgs/logo-full-white.svg" alt=""/>
             </div>
             <div class="hidden lg:block lg:ml-6">
                 <div class="flex">
@@ -28,12 +28,12 @@
                         <svg class="h-5 w-5 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                   d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"/>
                         </svg>
                     </div>
                     <input id="search"
                            class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-slate-100 placeholder-slate-400 focus:outline-none focus:bg-white sm:text-sm transition duration-150 ease-in-out"
-                           placeholder="Search" />
+                           placeholder="Search"/>
                 </div>
             </div>
         </div>
@@ -43,9 +43,9 @@
                 <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex"
                           stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16" />
+                          d="M4 6h16M4 12h16M4 18h16"/>
                     <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                          stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
         </div>
@@ -58,7 +58,8 @@
                     <div>
                         <button @click="open = !open"
                                 class="flex text-sm rounded-full text-white focus:outline-none focus:shadow-solid transition duration-150 ease-in-out">
-                            <img class="h-8 w-8 rounded-full border border-white" src="{{ auth()->user()->photo_url }}" />
+                            <img class="h-8 w-8 rounded-full border border-white"
+                                 src="{{ auth()->user()->photo_url }}"/>
                         </button>
                     </div>
                     <div x-show="open" x-transition:enter="transition ease-out duration-100"

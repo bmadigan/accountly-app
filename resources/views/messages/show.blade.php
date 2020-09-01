@@ -1,10 +1,8 @@
-@extends('layouts.app')
+<x-layouts.app>
 
 @section('page_title') Message @endsection
 
-@section('content')
-
-<x-page-header :page="$message->title" />
+<x-ui.page-header :page="$message->title" />
 
 <main>
     <div class="app-container sm:px-6 lg:px-8">
@@ -184,4 +182,4 @@
     </div>
 </main>
 
-@endsection
+</x-layouts.app>

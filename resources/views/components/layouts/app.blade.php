@@ -31,22 +31,26 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
     @livewireStyles
 </head>
 
 <body class="bg-gray-100">
-    <div class="min-h-screen flex flex-col">
-        <div class="flex-grow">
-            @include('shared.nav')
-            @yield('content')
-        </div>
+<div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+        <nav x-data="{ open: true}" class="bg-slate-700">
+            <x-layouts.nav.desktop />
+            <x-layouts.nav.mobile />
+        </nav>
 
-        @include('shared.footer')
-        <x-ui.flash />
+        {{ $slot }}
     </div>
-    @livewireScripts
+
+    <x-layouts.footer />
+
+    <x-ui.flash />
+</div>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+@livewireScripts
 </body>
 
 </html>

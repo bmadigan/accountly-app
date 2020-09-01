@@ -1,10 +1,8 @@
-@extends('layouts.app')
+<x-layouts.app>
 
 @section('page_title') Dashboard @endsection
 
-@section('content')
-
-<x-page-header page="Dashboard" />
+<x-ui.page-header page="Dashboard" />
 
 <main>
     <div class="app-container sm:px-6 lg:px-8">
@@ -22,4 +20,4 @@
     </div>
 </main>
 
-@endsection
+</x-layouts.app>
