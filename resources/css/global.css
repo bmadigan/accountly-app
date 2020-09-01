@@ -1,3 +1,5 @@
+[x-cloak] { display: none; }
+
 .app-container {
     @apply max-w-7xl mx-auto py-6;
 }

@@ -1,3 +1,6 @@
+[x-cloak] { display: none;
+}
+
 .app-container {
   max-width: 80rem;
   margin-left: auto;

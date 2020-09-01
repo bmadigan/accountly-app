@@ -7,16 +7,10 @@
 <main>
     <div class="app-container sm:px-6 lg:px-8">
 
-        @include('dashboard._stats-yearly')
+        <x-dashboard.stats-yearly year="2020" revenue="2800" expenses="1200" profit="1600" />
 
-        <div class="card mt-8">
-            <div class="px-4 py-5 sm:p-6">
+        <x-dashboard.charts />
 
-                <div class="my-4">
-                    @include('dashboard._charts')
-                </div>
-            </div>
-        </div>
     </div>
 </main>
 
