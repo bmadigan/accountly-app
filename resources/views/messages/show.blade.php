@@ -93,7 +93,7 @@
                     <div class="mt-6 border-t-2 border-gray-200 pt-6">
 
                         @foreach($message->comments as $comment)
-                        <x-comment :comment="$comment" />
+                            <x-messages.comment :comment="$comment" />
                         @endforeach
 
                         <h2 class="mt-6 text-2xl leading-9 font-bold text-gray-700">
