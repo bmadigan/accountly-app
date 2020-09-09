@@ -2,16 +2,7 @@
 
 A simple TALL Stack application.
 
-I created an NGROK subdomain for this site if you do not wish to install it.
-
-[View NGROK - LOCAL](http://accountly.ngrok.io)
-
-## Login
-
-Feel free to login with account:
-
-`Email: aryeo-team@aryeo.com` and
-`Password: password`
+TailwindCSS, AlpineJS, Laravel, Livewire
 
 ## Installation
 
